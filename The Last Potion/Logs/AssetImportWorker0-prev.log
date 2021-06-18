@@ -1,0 +1,314 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.3f1 (76626098c1c4) revision 7758432'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Pro; OS build 19041.1052; Version 2004; 64bit' Language: 'en' Physical Memory: 16333 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.3.3f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+S:/Unity Projects/Blank Page
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+53105
+Successfully changed project path to: S:/Unity Projects/Blank Page
+S:/Unity Projects/Blank Page
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 38.20 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.3f1 (76626098c1c4)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.3f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path S:/Unity Projects/Blank Page/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1660 SUPER (ID=0x21c4)
+    Vendor:   
+    VRAM:     5991 MB
+    Driver:   27.21.14.6192
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.3f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.3f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.3f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56828
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.3f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001575 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 39.48 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.778 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.000501 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 38.98 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.761 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.41 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1988 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 104.7 MB.
+System memory in use after: 104.6 MB.
+
+Unloading 25 unused Assets to reduce memory usage. Loaded Objects now: 2446.
+Total: 1.755100 ms (FindLiveObjects: 0.164500 ms CreateObjectMapping: 0.044000 ms MarkObjects: 1.438200 ms  DeleteObjects: 0.107800 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/New Folder
+  artifactKey: Guid(2a9b7e613413c274e970cff4b9132bfe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New Folder using Guid(2a9b7e613413c274e970cff4b9132bfe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbbc54ba0417bce0df984df61a75f112') in 0.007832 seconds
+  Import took 0.010386 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.378183 seconds.
+  path: Assets/Art
+  artifactKey: Guid(2a9b7e613413c274e970cff4b9132bfe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art using Guid(2a9b7e613413c274e970cff4b9132bfe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d820d4ba2d3928d80968a673c3ac282') in 0.005138 seconds
+  Import took 0.007862 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000563 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.45 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.688 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.43 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1966 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 103.2 MB.
+System memory in use after: 103.1 MB.
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2450.
+Total: 1.762100 ms (FindLiveObjects: 0.184800 ms CreateObjectMapping: 0.043100 ms MarkObjects: 1.434400 ms  DeleteObjects: 0.098900 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 344.716379 seconds.
+  path: Assets/Art/Assets/Cute Isometric Town
+  artifactKey: Guid(2fba6779d0d289141a481792aa96eef1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Assets/Cute Isometric Town using Guid(2fba6779d0d289141a481792aa96eef1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08a009d57d55b78014c5f88c22aee711') in 0.007251 seconds
+  Import took 0.010435 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.830519 seconds.
+  path: Assets/Art/Assets/Cute Isometric Town/Scenes
+  artifactKey: Guid(706a4f9ab9fb94665a66549ad1802847) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Assets/Cute Isometric Town/Scenes using Guid(706a4f9ab9fb94665a66549ad1802847) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd07bb50e0d37c9ff1c573b5217eab738') in 0.005197 seconds
+  Import took 0.008206 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 35.972888 seconds.
+  path: Assets/Art/Assets/Cute Isometric Town/Scenes/Demo Scene.unity
+  artifactKey: Guid(6095713dd000f4ad6bd7a75f30b4ec43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Assets/Cute Isometric Town/Scenes/Demo Scene.unity using Guid(6095713dd000f4ad6bd7a75f30b4ec43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6689932f68c017aadde899a763f07e2f') in 0.011054 seconds
+  Import took 0.013936 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.366589 seconds.
+  path: Assets/Scenes/Prototype1.unity
+  artifactKey: Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Prototype1.unity using Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f992b49ff4cdc473369eec4c1cb52c1') in 0.005673 seconds
+  Import took 0.008695 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 55.731094 seconds.
+  path: Assets/Art/Assets/Cute Isometric Town/Tiles
+  artifactKey: Guid(90d228854b1ae422ab07ff40c0e4b00c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Assets/Cute Isometric Town/Tiles using Guid(90d228854b1ae422ab07ff40c0e4b00c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44d54064e7e072ce01a5ebb6deab33ce') in 0.005109 seconds
+  Import took 0.008270 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.499837 seconds.
+  path: Assets/Art/Assets/Cute Isometric Town/Tiles/Ground Tiles
+  artifactKey: Guid(1412dd1a0b94b4265860c2aca436f340) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Assets/Cute Isometric Town/Tiles/Ground Tiles using Guid(1412dd1a0b94b4265860c2aca436f340) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7b0970aab682bbd1765d8d88289fce7') in 0.005178 seconds
+  Import took 0.008230 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.336220 seconds.
+  path: Assets/Art/Assets/Cute Isometric Town/Tiles/Objects
+  artifactKey: Guid(9fdf74c64f124427c8f1729062e8f95b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Assets/Cute Isometric Town/Tiles/Objects using Guid(9fdf74c64f124427c8f1729062e8f95b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '536b838e34eea479940561a57759d4fb') in 0.005032 seconds
+  Import took 0.007978 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.045359 seconds.
+  path: Assets/Art/Assets/Cute Isometric Town/Tiles/Objects/Buildings
+  artifactKey: Guid(b376d4ce52cc84a4f9d4049e389b93e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Assets/Cute Isometric Town/Tiles/Objects/Buildings using Guid(b376d4ce52cc84a4f9d4049e389b93e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60f14d9e407956926e7e4e9906873b53') in 0.005749 seconds
+  Import took 0.008544 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.807592 seconds.
+  path: Assets/Art/Assets/Cute Isometric Town/Tiles/Objects/Buildings/House
+  artifactKey: Guid(449dd324d2f964bda931d876c7bb9937) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Assets/Cute Isometric Town/Tiles/Objects/Buildings/House using Guid(449dd324d2f964bda931d876c7bb9937) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99d49862ae199b143566bcae59e58473') in 0.005251 seconds
+  Import took 0.008233 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.041109 seconds.
+  path: Assets/Art/Assets/Cute Isometric Town/Tiles/Objects/Buildings/House/House Blue Down.prefab
+  artifactKey: Guid(2ffe334141ae04981b8a09281d63993d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Assets/Cute Isometric Town/Tiles/Objects/Buildings/House/House Blue Down.prefab using Guid(2ffe334141ae04981b8a09281d63993d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9facbe051c92f12b7555da95dc3ce45') in 0.076526 seconds
+  Import took 0.079443 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000146 seconds.
+  path: Assets/Art/Assets/Cute Isometric Town/Tiles/Objects/Buildings/House/House Purple Left.prefab
+  artifactKey: Guid(9ff88eba5b7ac40dabff2d62af5007a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Assets/Cute Isometric Town/Tiles/Objects/Buildings/House/House Purple Left.prefab using Guid(9ff88eba5b7ac40dabff2d62af5007a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01f947d04c4cde7ca8f21f3f90c1498f') in 0.017612 seconds
+  Import took 0.020492 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000174 seconds.
+  path: Assets/Art/Assets/Cute Isometric Town/Tiles/Objects/Buildings/House/House Purple Right.prefab
+  artifactKey: Guid(828f0ef693e8247bcae48ffe4be5eb2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Assets/Cute Isometric Town/Tiles/Objects/Buildings/House/House Purple Right.prefab using Guid(828f0ef693e8247bcae48ffe4be5eb2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c922b7060ac0bc464cb109cd429b9d98') in 0.012893 seconds
+  Import took 0.015705 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000148 seconds.
+  path: Assets/Art/Assets/Cute Isometric Town/Tiles/Objects/Buildings/House/House Yellow Left.prefab
+  artifactKey: Guid(fc14da990fe544a16b969e0dbc023c41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Assets/Cute Isometric Town/Tiles/Objects/Buildings/House/House Yellow Left.prefab using Guid(fc14da990fe544a16b969e0dbc023c41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af75b6ca97b7425fd4bbe3b3d073787e') in 0.013045 seconds
+  Import took 0.015659 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000132 seconds.
+  path: Assets/Art/Assets/Cute Isometric Town/Tiles/Objects/Buildings/House/House Purple Up.prefab
+  artifactKey: Guid(e01a126c0d15949ce8814a4d204621ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Assets/Cute Isometric Town/Tiles/Objects/Buildings/House/House Purple Up.prefab using Guid(e01a126c0d15949ce8814a4d204621ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21c6e2cfce88b069c322f7999f033eae') in 0.019354 seconds
+  Import took 0.022100 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000158 seconds.
+  path: Assets/Art/Assets/Cute Isometric Town/Tiles/Objects/Buildings/House/House Blue Right.prefab
+  artifactKey: Guid(6244a0f7c73114d9aafbb8b61ec6b09d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Assets/Cute Isometric Town/Tiles/Objects/Buildings/House/House Blue Right.prefab using Guid(6244a0f7c73114d9aafbb8b61ec6b09d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6acae66377357fbd2071d63edb62b8b7') in 0.019201 seconds
+  Import took 0.022269 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000129 seconds.
+  path: Assets/Art/Assets/Cute Isometric Town/Tiles/Objects/Buildings/House/House Yellow Right.prefab
+  artifactKey: Guid(08d1778ee10c94c998aca1780872bfcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Assets/Cute Isometric Town/Tiles/Objects/Buildings/House/House Yellow Right.prefab using Guid(08d1778ee10c94c998aca1780872bfcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15126587d701acc1ae32ecbdac105f8c') in 0.014922 seconds
+  Import took 0.017716 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000150 seconds.
+  path: Assets/Art/Assets/Cute Isometric Town/Tiles/Objects/Buildings/House/House Red Right.prefab
+  artifactKey: Guid(503f3d059028840e893fbc6c22f91506) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Assets/Cute Isometric Town/Tiles/Objects/Buildings/House/House Red Right.prefab using Guid(503f3d059028840e893fbc6c22f91506) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53d45ffb0004ceaae4842c9fbccf53d5') in 0.009489 seconds
+  Import took 0.012069 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000138 seconds.
+  path: Assets/Art/Assets/Cute Isometric Town/Tiles/Objects/Buildings/House/House Red Up.prefab
+  artifactKey: Guid(c90d1c5907c97494fbce428af2041043) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Assets/Cute Isometric Town/Tiles/Objects/Buildings/House/House Red Up.prefab using Guid(c90d1c5907c97494fbce428af2041043) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '232be92f14296fe40999a8710cc61595') in 0.012021 seconds
+  Import took 0.014689 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000173 seconds.
+  path: Assets/Art/Assets/Cute Isometric Town/Tiles/Objects/Buildings/House/House Purple Down.prefab
+  artifactKey: Guid(bdec543a3c25544338a8e946e3d687e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Assets/Cute Isometric Town/Tiles/Objects/Buildings/House/House Purple Down.prefab using Guid(bdec543a3c25544338a8e946e3d687e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f7ee5c4453e00ce70d2845fbe286622') in 0.013219 seconds
+  Import took 0.015796 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000159 seconds.
+  path: Assets/Art/Assets/Cute Isometric Town/Tiles/Objects/Buildings/House/House Red Down.prefab
+  artifactKey: Guid(6aef70b04b5d346ee96d7d3727b4ab6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Assets/Cute Isometric Town/Tiles/Objects/Buildings/House/House Red Down.prefab using Guid(6aef70b04b5d346ee96d7d3727b4ab6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5857a3d65fee7574d2d3e5f0de316468') in 0.014887 seconds
+  Import took 0.017588 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000147 seconds.
+  path: Assets/Art/Assets/Cute Isometric Town/Tiles/Objects/Buildings/House/House Blue Up.prefab
+  artifactKey: Guid(2327086cb20cd4295becaeb50cf8cacb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Assets/Cute Isometric Town/Tiles/Objects/Buildings/House/House Blue Up.prefab using Guid(2327086cb20cd4295becaeb50cf8cacb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1200f08dd025048a3c9ce50225c7c539') in 0.009326 seconds
+  Import took 0.011988 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000206 seconds.
+  path: Assets/Art/Assets/Cute Isometric Town/Tiles/Objects/Buildings/House/House Red Left.prefab
+  artifactKey: Guid(2f49f6129827c4d5781008365cee3427) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Assets/Cute Isometric Town/Tiles/Objects/Buildings/House/House Red Left.prefab using Guid(2f49f6129827c4d5781008365cee3427) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba496908e30d8d8c545da9b41c729494') in 0.008834 seconds
+  Import took 0.011673 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000148 seconds.
+  path: Assets/Art/Assets/Cute Isometric Town/Tiles/Objects/Buildings/House/House Yellow Up.prefab
+  artifactKey: Guid(23f8c1ea81f0a4fceaf9c65e56908566) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Assets/Cute Isometric Town/Tiles/Objects/Buildings/House/House Yellow Up.prefab using Guid(23f8c1ea81f0a4fceaf9c65e56908566) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10c1c48a7d71c5c3ae8954bc90a9d6cc') in 0.010370 seconds
+  Import took 0.013108 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000144 seconds.
+  path: Assets/Art/Assets/Cute Isometric Town/Tiles/Objects/Buildings/House/House Blue Left.prefab
+  artifactKey: Guid(4d5cd26c08f6f4b4fb8b241e00365e58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Assets/Cute Isometric Town/Tiles/Objects/Buildings/House/House Blue Left.prefab using Guid(4d5cd26c08f6f4b4fb8b241e00365e58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2b9dbf6acde2eb708c042d8d2271fd2') in 0.008406 seconds
+  Import took 0.011175 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000157 seconds.
+  path: Assets/Art/Assets/Cute Isometric Town/Tiles/Objects/Buildings/House/House Yellow Down.prefab
+  artifactKey: Guid(a7c056fb62e434964b3a914b36ed6831) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Assets/Cute Isometric Town/Tiles/Objects/Buildings/House/House Yellow Down.prefab using Guid(a7c056fb62e434964b3a914b36ed6831) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8811285c0ad0996abad1f74bd055101f') in 0.008790 seconds
+  Import took 0.011442 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
