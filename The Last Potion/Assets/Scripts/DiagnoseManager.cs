@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 
 //Pass in the curretn day and change the output depending on whihc day it is Observe(day1);
@@ -11,19 +12,26 @@ public class DiagnoseManager : MonoBehaviour
 {
     public GameObject InteractWindow;
     public GameObject StartWindow;
-    public GameObject DiagnoseWindow;
-
     public GameObject chatBox;
+    new public Transform transform;
+    public int day;
 
-    public Conversation talk;
-    public Conversation feeling;
-    public Conversation observe;
-
-    [HideInInspector] public bool isOpen;
+    private bool isOpen;
     private bool trigger;
+
+    //Conversations
+    public Conversation Physical1;
+    public Conversation Physical2;
+    public Conversation Mental1;
+    public Conversation Mental2;
+
+    //Buttons
+    public Button leave;
 
     public void Start()
     {
+        day = GameManager.instance.day;
+
         trigger = false;
         chatBox.SetActive(false);
         InteractWindow.SetActive(false);
@@ -38,76 +46,44 @@ public class DiagnoseManager : MonoBehaviour
                 Open();
             }
         }
-
-
-        if (isOpen)
-        {
-            if (StartWindow.activeSelf)
-            {
-                if (Input.GetKeyDown(KeyCode.Alpha1))
-                {
-                    Close();
-                    DialogueManager.StartConversation(talk);
-                }
-
-                else if (Input.GetKeyDown(KeyCode.Alpha2))
-                {
-                    StartWindow.SetActive(false);
-                    DiagnoseWindow.SetActive(true);
-                }
-
-                else if (Input.GetKeyDown(KeyCode.Alpha3))
-                {
-                    Close();
-                }
-            }
-
-            else if (DiagnoseWindow.activeSelf)
-            {
-                if (Input.GetKeyDown(KeyCode.Alpha1))
-                {
-                    Observe();
-                }
-                else if (Input.GetKeyDown(KeyCode.Alpha2))
-                {
-                    Feeling();
-                }
-                else if (Input.GetKeyDown(KeyCode.Alpha3))
-                {
-                    Close();
-                }
-            }
-        }
     }
 
-    public void Observe()
-    {
-        if (DialogueManager.instance.currentIndex == 0)
-        {
-            Close();
-            DialogueManager.StartConversation(observe);
-        }
 
-        if (DialogueManager.instance.currentIndex > DialogueManager.instance.currentConvo.GetLength() - 1)
-        {
-            Open();
-        }
+    public void PhysicalCheck1()
+    {
+        DialogueManager.StopConversation();
+        DialogueManager.StartConversation(Physical1);
     }
 
-    public void Feeling()
+    public void PhysicalCheck2()
     {
+        DialogueManager.StopConversation();
+        DialogueManager.StartConversation(Physical2);
+    }
 
-        if (DialogueManager.instance.currentIndex == 0)
-        {
-            Close();
-            DialogueManager.StartConversation(feeling);
+    public void MentalCheck1()
+    {
+        DialogueManager.StartConversation(Mental1);
+    }
+
+    public void MentalCheck2()
+    {
+        switch (day){
+            case 1:
+                Debug.Log("Mental 2: Day 1");
+                //DialogueManager.StartConversation(Mental1);
+                break;
+            case 2:
+                Debug.Log("Mental 2: Day 2");
+                //DialogueManager.StartConversation(Mental2);
+                break;
         }
+        
+    }
 
-        if (DialogueManager.instance.currentIndex > DialogueManager.instance.currentConvo.GetLength() - 1)
-        {
-            Open();
-        }
-
+    public void EndConvo()
+    {
+        DialogueManager.StopConversation();
     }
 
     public void Close()
@@ -115,9 +91,10 @@ public class DiagnoseManager : MonoBehaviour
         trigger = false;
         isOpen = false;
 
+        foreach (Transform child in transform)
+            child.gameObject.SetActive(false);
+
         InteractWindow.SetActive(false);
-        StartWindow.SetActive(false);
-        DiagnoseWindow.SetActive(false);
     }
 
     public void Open()
@@ -130,30 +107,9 @@ public class DiagnoseManager : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "Player")
-        {
-            trigger = true;
-            chatBox.SetActive(true);
-        }
+        trigger = true;
+        chatBox.SetActive(true);
     }
-
-    /*
-
-    private void OnTriggerStay2D(Collider2D collision)
-    {
-        if (collision.tag == "Player")
-        {
-            Debug.Log("triggering");
-
-            if (Input.GetKeyDown(KeyCode.E))
-            {
-                Debug.Log("Press e");
-                Open();
-            }
-        }
-    }
-
-    */
 
     private void OnTriggerExit2D(Collider2D collision)
     {
@@ -161,5 +117,91 @@ public class DiagnoseManager : MonoBehaviour
         Close();
     }
 }
+
+
+
+
+
+
+/*
+ if (isOpen)
+    {
+        if (StartWindow.activeSelf)
+        {
+            if (Input.GetKeyDown(KeyCode.Alpha1))
+            {
+                Close();
+                DialogueManager.StartConversation(talk);
+            }
+
+            else if (Input.GetKeyDown(KeyCode.Alpha2))
+            {
+                StartWindow.SetActive(false);
+                DiagnoseWindow.SetActive(true);
+            }
+
+            else if (Input.GetKeyDown(KeyCode.Alpha3))
+            {
+                Close();
+            }
+        }
+
+        else if (DiagnoseWindow.activeSelf)
+        {
+            if (Input.GetKeyDown(KeyCode.Alpha1))
+            {
+                Observe();
+            }
+            else if (Input.GetKeyDown(KeyCode.Alpha2))
+            {
+                Feeling();
+            }
+            else if (Input.GetKeyDown(KeyCode.Alpha3))
+            {
+                Close();
+            }
+        }
+    }
+
+
+
+public void Observe()
+{
+    if (DialogueManager.instance.currentIndex == 0)
+    {
+        Close();
+        DialogueManager.StartConversation(observe);
+    }
+
+    if (DialogueManager.instance.currentIndex > DialogueManager.instance.currentConvo.GetLength() - 1)
+    {
+        Open();
+    }
+}
+
+public void Feeling()
+{
+    Close();
+}
+
+public void Close()
+{
+    trigger = false;
+    isOpen = false;
+
+    InteractWindow.SetActive(false);
+    StartWindow.SetActive(false);
+    DiagnoseWindow.SetActive(false);
+}
+
+public void Open()
+{
+    isOpen = true;
+    chatBox.SetActive(false);
+    InteractWindow.SetActive(true);
+    StartWindow.SetActive(true);
+}
+
+*/
 
 

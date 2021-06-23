@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
     public enum GameState {  FreeRoam, Dialogue}
 
     public static GameManager instance;
+    public int day;
 
     [SerializeField] PlayerMovement playerController;
 
@@ -18,6 +19,8 @@ public class GameManager : MonoBehaviour
         {
             instance = this;
         }
+
+        day = 1;
 
         state = GameState.FreeRoam;
     }
