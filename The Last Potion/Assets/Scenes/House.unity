@@ -5878,7 +5878,7 @@ MonoBehaviour:
   DiagnoseWindow: {fileID: 1751222289}
   chatBox: {fileID: 1374136736}
   talk: {fileID: 11400000, guid: 1306a2cc1b0c0e044b4adbbb48c6a426, type: 2}
-  feeling: {fileID: 11400000, guid: a8ebd2cdba5f69b4b800fcbe577476b9, type: 2}
+  feeling: {fileID: 11400000, guid: 37217ebe7dd477a469595d8853879340, type: 2}
   observe: {fileID: 11400000, guid: 85d79a1b0f6c5a74fb25b2fa5278ec4e, type: 2}
   isOpen: 0
 --- !u!58 &1669993605

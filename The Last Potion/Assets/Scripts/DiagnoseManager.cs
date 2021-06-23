@@ -82,14 +82,32 @@ public class DiagnoseManager : MonoBehaviour
 
     public void Observe()
     {
-        Close();
-        DialogueManager.StartConversation(observe);
+        if (DialogueManager.instance.currentIndex == 0)
+        {
+            Close();
+            DialogueManager.StartConversation(observe);
+        }
+
+        if (DialogueManager.instance.currentIndex > DialogueManager.instance.currentConvo.GetLength() - 1)
+        {
+            Open();
+        }
     }
 
     public void Feeling()
     {
-        Close();
-        DialogueManager.StartConversation(feeling);
+
+        if (DialogueManager.instance.currentIndex == 0)
+        {
+            Close();
+            DialogueManager.StartConversation(feeling);
+        }
+
+        if (DialogueManager.instance.currentIndex > DialogueManager.instance.currentConvo.GetLength() - 1)
+        {
+            Open();
+        }
+
     }
 
     public void Close()
