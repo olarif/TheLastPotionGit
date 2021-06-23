@@ -14,6 +14,7 @@ public class DialogueManager : MonoBehaviour
     public static DialogueManager instance;
     private Animator anim;
     private Coroutine typing;
+    public bool isActive;
 
     private void Awake()
     {
@@ -30,8 +31,26 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
+    public void Start()
+    {
+        isActive = false;
+    }
+
+    public void Update()
+    {
+        if (instance.currentIndex > 0)
+        {
+            if (isOpen && Input.GetKeyDown(KeyCode.E))
+            {
+                ReadNext();
+            }
+        }
+    }
+
     public static void StartConversation(Conversation convo)
     {
+        instance.isActive = true;
+
         instance.anim.SetBool("isOpen", true);
         isOpen = true;
 
