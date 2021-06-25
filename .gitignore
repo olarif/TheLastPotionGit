@@ -19,10 +19,8 @@ UserSettings/
 Recordings/
 */Recordings/
 
-*/FMOD/Assets/
-
 **/[Oo]bj/
-**/[Bb]uild/
+*/[Bb]uild/
 **/[Bb]uilds/
 **/[Bb]uildIL2CPP/
 **/[Dd]ebuglog/
@@ -56,3 +54,9 @@ sysinfo.txt
 #/*/*.zip
 The Last Potion/UserSettings/EditorUserSettings.asset
 The Last Potion/UserSettings/EditorUserSettings.asset
+
+# FMOD
+*/FMOD/.cache/
+*/FMOD/.unsaved/
+*/FMOD/.user/
+*/FMOD/Assets/
