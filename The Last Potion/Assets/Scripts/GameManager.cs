@@ -6,6 +6,9 @@ public class GameManager : MonoBehaviour
 {
     public enum GameState {  FreeRoam, Dialogue}
 
+    public GameObject image;
+    private bool toggle = false;
+
     public static GameManager instance;
     public int day;
 
@@ -27,6 +30,13 @@ public class GameManager : MonoBehaviour
 
     public void Update()
     {
+        if (Input.GetKeyDown(KeyCode.H))
+        {
+            toggle = !toggle;
+
+            image.SetActive(toggle);
+        }
+
         if (state == GameState.FreeRoam)
         {
             playerController.HandleUpdate();
@@ -35,7 +45,6 @@ public class GameManager : MonoBehaviour
         {
 
         }
-
 
         if (Input.GetKeyDown(KeyCode.Escape))
         {
