@@ -6,8 +6,7 @@ public class GameManager : MonoBehaviour
 {
     public enum GameState {  FreeRoam, Dialogue}
 
-    public GameObject image;
-    private bool toggle = false;
+    private Inventory inventory;
 
     public static GameManager instance;
     public int day;
@@ -26,16 +25,12 @@ public class GameManager : MonoBehaviour
         day = 2;
 
         state = GameState.FreeRoam;
+
+        inventory = new Inventory();
     }
 
     public void Update()
     {
-        if (Input.GetKeyDown(KeyCode.H))
-        {
-            toggle = !toggle;
-
-            image.SetActive(toggle);
-        }
 
         if (state == GameState.FreeRoam)
         {
