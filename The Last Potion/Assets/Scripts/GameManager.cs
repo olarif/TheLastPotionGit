@@ -23,7 +23,7 @@ public class GameManager : MonoBehaviour
             instance = this;
         }
 
-        day = 1;
+        day = 2;
 
         state = GameState.FreeRoam;
     }

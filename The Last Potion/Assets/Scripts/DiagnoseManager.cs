@@ -4,10 +4,6 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-//Pass in the curretn day and change the output depending on whihc day it is Observe(day1);
-//if day 2 -> different convo called
-
-
 public class DiagnoseManager : MonoBehaviour
 {
     public GameObject InteractWindow;
@@ -20,6 +16,11 @@ public class DiagnoseManager : MonoBehaviour
     private bool trigger;
 
     //Conversations
+
+    //Too much water
+
+    public Conversation tooMuchFire1;
+    public Conversation tooMuchFire2;
     public Conversation Physical1;
     public Conversation Physical2;
     public Conversation Mental1;
@@ -51,6 +52,17 @@ public class DiagnoseManager : MonoBehaviour
 
     public void PhysicalCheck1()
     {
+        switch (day)
+        {
+            case 1:
+                DialogueManager.StartConversation(tooMuchFire1);
+                break;
+            case 2:
+                DialogueManager.StartConversation(tooMuchFire2);
+                break;
+        }
+
+
         DialogueManager.StopConversation();
         DialogueManager.StartConversation(Physical1);
     }
