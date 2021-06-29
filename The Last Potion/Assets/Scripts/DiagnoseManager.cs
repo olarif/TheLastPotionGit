@@ -11,20 +11,31 @@ public class DiagnoseManager : MonoBehaviour
     public GameObject chatBox;
     new public Transform transform;
     public int day;
+    public bool waterState = true;
 
     private bool isOpen;
     private bool trigger;
 
     //Conversations
 
-    //Too much water
+    //Too much fire
 
     public Conversation tooMuchFire1;
     public Conversation tooMuchFire2;
-    public Conversation Physical1;
-    public Conversation Physical2;
-    public Conversation Mental1;
-    public Conversation Mental2;
+    public Conversation tooMuchFire3;
+    public Conversation tooMuchFire4;
+    public Conversation tooMuchFire5;
+    public Conversation tooMuchFire6;
+
+    //Too much water
+
+    public Conversation tooMuchWater1;
+    public Conversation tooMuchWater2;
+    public Conversation tooMuchWater3;
+    public Conversation tooMuchWater4;
+    public Conversation tooMuchWater5;
+    public Conversation tooMuchWater6;
+
 
     //Buttons
     public Button leave;
@@ -32,6 +43,7 @@ public class DiagnoseManager : MonoBehaviour
     public void Start()
     {
         day = GameManager.instance.day;
+        
 
         trigger = false;
         chatBox.SetActive(false);
@@ -44,38 +56,46 @@ public class DiagnoseManager : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
-                Open();
+                Starter();
             }
         }
     }
 
+    public void Starter()
+    {
+        if ( waterState == true )
+        {
+            DialogueManager.StartConversation(tooMuchWater1);
+        }
+        
+    }
 
     public void PhysicalCheck1()
     {
         switch (day)
         {
             case 1:
-                DialogueManager.StartConversation(tooMuchFire1);
+                DialogueManager.StartConversation(tooMuchWater1);
                 break;
             case 2:
-                DialogueManager.StartConversation(tooMuchFire2);
+                DialogueManager.StartConversation(tooMuchWater2);
                 break;
         }
 
 
         DialogueManager.StopConversation();
-        DialogueManager.StartConversation(Physical1);
+        DialogueManager.StartConversation(tooMuchWater2);
     }
 
     public void PhysicalCheck2()
     {
         DialogueManager.StopConversation();
-        DialogueManager.StartConversation(Physical2);
+        DialogueManager.StartConversation(tooMuchWater2);
     }
 
     public void MentalCheck1()
     {
-        DialogueManager.StartConversation(Mental1);
+        DialogueManager.StartConversation(tooMuchWater2);
     }
 
     public void MentalCheck2()

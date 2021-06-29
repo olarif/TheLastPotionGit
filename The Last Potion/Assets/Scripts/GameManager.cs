@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
 
     public static GameManager instance;
     public int day;
+    public int elementState;
 
     [SerializeField] PlayerMovement playerController;
 
@@ -23,6 +24,7 @@ public class GameManager : MonoBehaviour
         }
 
         day = 2;
+        elementState = 1;
 
         state = GameState.FreeRoam;
 
