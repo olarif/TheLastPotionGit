@@ -22,43 +22,48 @@ public class DiagnoseManager : MonoBehaviour
 
     //Conversations
 
+    //Choose
+
+    public Conversation choose;
+
     //Too much fire
 
-    public Conversation tooMuchFire1;
-    public Conversation tooMuchFire2;
-    public Conversation tooMuchFire3;
-    public Conversation tooMuchFire4;
-    public Conversation tooMuchFire5;
-    public Conversation tooMuchFire6;
+    public Conversation tooMuchFire1_1;
+    public Conversation tooMuchFire1_2;
+    public Conversation tooMuchFireB;
+    public Conversation tooMuchFireF;
+    public Conversation tooMuchFireH;
+    public Conversation tooMuchFireT;
+    public Conversation tooMuchFireE;
 
     public bool waterBottle = false;
 
     //Too much water
 
     public Conversation tooMuchWater1;
-    public Conversation tooMuchWater2;
-    public Conversation tooMuchWater3;
-    public Conversation tooMuchWater4;
-    public Conversation tooMuchWater5;
-    public Conversation tooMuchWater6;
+    public Conversation tooMuchWaterB;
+    public Conversation tooMuchWaterF;
+    public Conversation tooMuchWaterH;
+    public Conversation tooMuchWaterT;
+    public Conversation tooMuchWaterE;
 
     //Too much air
 
     public Conversation tooMuchAir1;
-    public Conversation tooMuchAir2;
-    public Conversation tooMuchAir3;
-    public Conversation tooMuchAir4;
-    public Conversation tooMuchAir5;
-    public Conversation tooMuchAir6;
+    public Conversation tooMuchAirB;
+    public Conversation tooMuchAirF;
+    public Conversation tooMuchAirH;
+    public Conversation tooMuchAirT;
+    public Conversation tooMuchAirE;
 
     //Too much earth
 
     public Conversation tooMuchEarth1;
-    public Conversation tooMuchEarth2;
-    public Conversation tooMuchEarth3;
-    public Conversation tooMuchEarth4;
-    public Conversation tooMuchEarth5;
-    public Conversation tooMuchEarth6;
+    public Conversation tooMuchEarthB;
+    public Conversation tooMuchEarthF;
+    public Conversation tooMuchEarthH;
+    public Conversation tooMuchEarthT;
+    public Conversation tooMuchEarthE;
 
     //Buttons
     public Button leave;
@@ -67,6 +72,7 @@ public class DiagnoseManager : MonoBehaviour
     {
         day = GameManager.instance.day;
         elementState = GameManager.instance.elementState;
+        elementState = 2;
 
         trigger = false;
         chatBox.SetActive(false);
@@ -79,8 +85,8 @@ public class DiagnoseManager : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
-                Open();
-                //Starter();
+                //Open();
+                Starter();
             }
         }
     }
@@ -93,57 +99,157 @@ public class DiagnoseManager : MonoBehaviour
             case 1:
                 if (waterBottle == false)
                 {
-                    DialogueManager.StartConversation(tooMuchFire1);
+                    DialogueManager.StartConversation(tooMuchFire1_1);
                 }
                 else
                 {
-                    DialogueManager.StartConversation(tooMuchFire2);
+                    DialogueManager.StartConversation(tooMuchFire1_2);
+                    //Choice();
                 }
                 break;
             case 2:
                 DialogueManager.StartConversation(tooMuchWater1);
+                
                 break;
             case 3:
                 DialogueManager.StartConversation(tooMuchAir1);
+                //Choice();
                 break;
             case 4:
                 DialogueManager.StartConversation(tooMuchEarth1);
+                Choice();
                 break;
 
         }
-        DialogueManager.StopConversation();
+
         
     }
 
-    public void PhysicalCheck1()
+    public void checkBreath()
     {
         switch (elementState)
         {
             case 1:
-                DialogueManager.StartConversation(tooMuchWater1);
+                DialogueManager.StartConversation(tooMuchFireB);
                 break;
             case 2:
-                DialogueManager.StartConversation(tooMuchWater2);
+                DialogueManager.StartConversation(tooMuchWaterB);
+                Open();
                 break;
+            case 3:
+                DialogueManager.StartConversation(tooMuchAirB);
+                break;
+            case 4:
+                DialogueManager.StartConversation(tooMuchEarthB);
+                break;
+
         }
 
-
-        DialogueManager.StopConversation();
-        DialogueManager.StartConversation(tooMuchWater2);
+        
     }
 
-    public void PhysicalCheck2()
+    public void checkForehead()
     {
-        DialogueManager.StopConversation();
-        DialogueManager.StartConversation(tooMuchWater2);
+        switch (elementState)
+        {
+            case 1:
+                DialogueManager.StartConversation(tooMuchFireF);
+                break;
+            case 2:
+                DialogueManager.StartConversation(tooMuchWaterF);
+                Open();
+                break;
+            case 3:
+                DialogueManager.StartConversation(tooMuchAirF);
+                break;
+            case 4:
+                DialogueManager.StartConversation(tooMuchEarthF);
+                break;
+
+        }
+
+        
     }
 
-    public void MentalCheck1()
+    public void checkHand()
     {
-        DialogueManager.StartConversation(tooMuchWater2);
+        switch (elementState)
+        {
+            case 1:
+                DialogueManager.StartConversation(tooMuchFireH);
+                break;
+            case 2:
+                DialogueManager.StartConversation(tooMuchWaterH);
+                Open();
+                break;
+            case 3:
+                DialogueManager.StartConversation(tooMuchAirH);
+                break;
+            case 4:
+                DialogueManager.StartConversation(tooMuchEarthH);
+                break;
+
+        }
+
+        
     }
 
-    public void MentalCheck2()
+    public void checkTalk()
+    {
+        switch (elementState)
+        {
+            case 1:
+                DialogueManager.StartConversation(tooMuchFireT);
+                break;
+            case 2:
+                DialogueManager.StartConversation(tooMuchWaterT);
+                Open();
+                break;
+            case 3:
+                DialogueManager.StartConversation(tooMuchAirT);
+                break;
+            case 4:
+                DialogueManager.StartConversation(tooMuchEarthT);
+                break;
+
+        }
+
+        
+    }
+
+    public void checkEnd()
+    {
+        switch (elementState)
+        {
+            case 1:
+                DialogueManager.StartConversation(tooMuchFireE);
+                break;
+            case 2:
+                DialogueManager.StartConversation(tooMuchWaterE);
+                Open();
+                break;
+            case 3:
+                DialogueManager.StartConversation(tooMuchAirE);
+                break;
+            case 4:
+                DialogueManager.StartConversation(tooMuchEarthE);
+                break;
+
+        }
+
+        
+    }
+
+    public void Choice()
+    {
+        DialogueManager.StartConversation(choose);
+        isOpen = true;
+        chatBox.SetActive(false);
+        InteractWindow.SetActive(true);
+        StartWindow.SetActive(true);
+    }
+
+    /*public void MentalCheck2()
     {
         switch (day){
             case 1:
@@ -156,7 +262,7 @@ public class DiagnoseManager : MonoBehaviour
                 break;
         }
         
-    }
+    }*/
 
     public void EndConvo()
     {

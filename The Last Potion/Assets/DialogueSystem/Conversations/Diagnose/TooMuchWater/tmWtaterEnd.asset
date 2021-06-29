@@ -22,10 +22,6 @@ MonoBehaviour:
 
       I love you, Vec."'
   - speaker: {fileID: 11400000, guid: 0e0f50cb6d9e3844582613b7de3fab55, type: 2}
-    dialogue: '"I......
-
-      I love you, Vec."'
-  - speaker: {fileID: 11400000, guid: 0e0f50cb6d9e3844582613b7de3fab55, type: 2}
     dialogue: '"I love you, too. Christa."'
   - speaker: {fileID: 11400000, guid: 0e0f50cb6d9e3844582613b7de3fab55, type: 2}
     dialogue: '"Vec...
