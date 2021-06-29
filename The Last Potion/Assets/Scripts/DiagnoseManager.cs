@@ -11,7 +11,11 @@ public class DiagnoseManager : MonoBehaviour
     public GameObject chatBox;
     new public Transform transform;
     public int day;
-    public bool waterState = true;
+    public int elementState;
+    //elementState == 1 --> too much fire
+    //elementState == 2 --> too much water
+    //elementState == 3 --> too much air
+    //elementState == 4 --> too much earth
 
     private bool isOpen;
     private bool trigger;
@@ -27,6 +31,8 @@ public class DiagnoseManager : MonoBehaviour
     public Conversation tooMuchFire5;
     public Conversation tooMuchFire6;
 
+    public bool waterBottle = false;
+
     //Too much water
 
     public Conversation tooMuchWater1;
@@ -36,6 +42,23 @@ public class DiagnoseManager : MonoBehaviour
     public Conversation tooMuchWater5;
     public Conversation tooMuchWater6;
 
+    //Too much air
+
+    public Conversation tooMuchAir1;
+    public Conversation tooMuchAir2;
+    public Conversation tooMuchAir3;
+    public Conversation tooMuchAir4;
+    public Conversation tooMuchAir5;
+    public Conversation tooMuchAir6;
+
+    //Too much earth
+
+    public Conversation tooMuchEarth1;
+    public Conversation tooMuchEarth2;
+    public Conversation tooMuchEarth3;
+    public Conversation tooMuchEarth4;
+    public Conversation tooMuchEarth5;
+    public Conversation tooMuchEarth6;
 
     //Buttons
     public Button leave;
@@ -43,7 +66,7 @@ public class DiagnoseManager : MonoBehaviour
     public void Start()
     {
         day = GameManager.instance.day;
-        
+        elementState = GameManager.instance.elementState;
 
         trigger = false;
         chatBox.SetActive(false);
@@ -56,23 +79,45 @@ public class DiagnoseManager : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
-                Starter();
+                Open();
+                //Starter();
             }
         }
     }
 
     public void Starter()
     {
-        if ( waterState == true )
+        //Open();
+        switch ( elementState )
         {
-            DialogueManager.StartConversation(tooMuchWater1);
+            case 1:
+                if (waterBottle == false)
+                {
+                    DialogueManager.StartConversation(tooMuchFire1);
+                }
+                else
+                {
+                    DialogueManager.StartConversation(tooMuchFire2);
+                }
+                break;
+            case 2:
+                DialogueManager.StartConversation(tooMuchWater1);
+                break;
+            case 3:
+                DialogueManager.StartConversation(tooMuchAir1);
+                break;
+            case 4:
+                DialogueManager.StartConversation(tooMuchEarth1);
+                break;
+
         }
+        DialogueManager.StopConversation();
         
     }
 
     public void PhysicalCheck1()
     {
-        switch (day)
+        switch (elementState)
         {
             case 1:
                 DialogueManager.StartConversation(tooMuchWater1);

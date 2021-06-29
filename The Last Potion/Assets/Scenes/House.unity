@@ -1330,8 +1330,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e3e1ca49a637fa46808ef0b580577d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  image: {fileID: 0}
   day: 0
+  elementState: 0
   playerController: {fileID: 1612328814}
 --- !u!1 &252456506
 GameObject:
@@ -7754,12 +7754,32 @@ MonoBehaviour:
   chatBox: {fileID: 1374136736}
   transform: {fileID: 14898199}
   day: 0
-  tooMuchFire1: {fileID: 11400000, guid: 2f6de743fb8c36a4fa407d01e3d00b45, type: 2}
-  tooMuchFire2: {fileID: 11400000, guid: 651828bc447a0354bbc5e46dc4a873dd, type: 2}
-  Physical1: {fileID: 11400000, guid: 52f2a17e9ce0d9e4181a7cf616b88d12, type: 2}
-  Physical2: {fileID: 11400000, guid: e77974ef33dade84cbf2f5d88cea9da3, type: 2}
-  Mental1: {fileID: 11400000, guid: 16cc5caaf1321f240a3ffe59814aebef, type: 2}
-  Mental2: {fileID: 11400000, guid: 50dfe09d879e6164c8726840684d15ab, type: 2}
+  elementState: 0
+  tooMuchFire1: {fileID: 11400000, guid: 4f73df68a64449f44a34375d195a7b2d, type: 2}
+  tooMuchFire2: {fileID: 11400000, guid: bfa1aae5bbcc12043b427fa9e8215705, type: 2}
+  tooMuchFire3: {fileID: 0}
+  tooMuchFire4: {fileID: 0}
+  tooMuchFire5: {fileID: 0}
+  tooMuchFire6: {fileID: 0}
+  waterBottle: 0
+  tooMuchWater1: {fileID: 11400000, guid: a8ebd2cdba5f69b4b800fcbe577476b9, type: 2}
+  tooMuchWater2: {fileID: 0}
+  tooMuchWater3: {fileID: 0}
+  tooMuchWater4: {fileID: 0}
+  tooMuchWater5: {fileID: 0}
+  tooMuchWater6: {fileID: 0}
+  tooMuchAir1: {fileID: 0}
+  tooMuchAir2: {fileID: 0}
+  tooMuchAir3: {fileID: 0}
+  tooMuchAir4: {fileID: 0}
+  tooMuchAir5: {fileID: 0}
+  tooMuchAir6: {fileID: 0}
+  tooMuchEarth1: {fileID: 0}
+  tooMuchEarth2: {fileID: 0}
+  tooMuchEarth3: {fileID: 0}
+  tooMuchEarth4: {fileID: 0}
+  tooMuchEarth5: {fileID: 0}
+  tooMuchEarth6: {fileID: 0}
   leave: {fileID: 0}
 --- !u!58 &1669993605
 CircleCollider2D:
@@ -8120,7 +8140,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1823837104
 GameObject:
@@ -10735,6 +10755,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1669993604}
+        m_TargetAssemblyTypeName: DiagnoseManager, Assembly-CSharp
+        m_MethodName: Starter
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine

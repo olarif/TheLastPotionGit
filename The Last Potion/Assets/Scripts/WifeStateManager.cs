@@ -4,10 +4,20 @@ using UnityEngine;
 
 public class WifeStateManager : MonoBehaviour
 {
-    public static GameManager instance;
+    public static WifeStateManager instance;
     public int elementState;
 
-    // Start is called before the first frame update
+    
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+        }
+        
+        elementState = 1;
+    }
+
     void Start()
     {
         
