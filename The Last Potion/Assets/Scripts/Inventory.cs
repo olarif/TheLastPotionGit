@@ -11,7 +11,7 @@ public class Inventory
         itemList = new List<Item>();
 
         AddItem(new Item { itemType = Item.ItemType.Plant, classType = Item.ClassType.Fire, value = 2});
-        Debug.Log(itemList.Count);
+        //Debug.Log(itemList.Count);
     }
 
     public void AddItem(Item item)
