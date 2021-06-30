@@ -93,7 +93,7 @@ public class DiagnoseManager : MonoBehaviour
 
     public void Starter()
     {
-        //Open();
+        
         switch ( elementState )
         {
             case 1:
@@ -109,7 +109,6 @@ public class DiagnoseManager : MonoBehaviour
                 break;
             case 2:
                 DialogueManager.StartConversation(tooMuchWater1);
-                
                 break;
             case 3:
                 DialogueManager.StartConversation(tooMuchAir1);
@@ -117,12 +116,11 @@ public class DiagnoseManager : MonoBehaviour
                 break;
             case 4:
                 DialogueManager.StartConversation(tooMuchEarth1);
-                Choice();
                 break;
 
         }
+        Open();
 
-        
     }
 
     public void checkBreath()
@@ -134,7 +132,6 @@ public class DiagnoseManager : MonoBehaviour
                 break;
             case 2:
                 DialogueManager.StartConversation(tooMuchWaterB);
-                Open();
                 break;
             case 3:
                 DialogueManager.StartConversation(tooMuchAirB);
@@ -144,8 +141,9 @@ public class DiagnoseManager : MonoBehaviour
                 break;
 
         }
+        Open();
 
-        
+
     }
 
     public void checkForehead()
@@ -157,7 +155,6 @@ public class DiagnoseManager : MonoBehaviour
                 break;
             case 2:
                 DialogueManager.StartConversation(tooMuchWaterF);
-                Open();
                 break;
             case 3:
                 DialogueManager.StartConversation(tooMuchAirF);
@@ -167,8 +164,9 @@ public class DiagnoseManager : MonoBehaviour
                 break;
 
         }
+        Open();
 
-        
+
     }
 
     public void checkHand()
@@ -190,8 +188,9 @@ public class DiagnoseManager : MonoBehaviour
                 break;
 
         }
+        Open();
 
-        
+
     }
 
     public void checkTalk()
@@ -213,8 +212,9 @@ public class DiagnoseManager : MonoBehaviour
                 break;
 
         }
+        Open();
 
-        
+
     }
 
     public void checkEnd()
@@ -226,7 +226,6 @@ public class DiagnoseManager : MonoBehaviour
                 break;
             case 2:
                 DialogueManager.StartConversation(tooMuchWaterE);
-                Open();
                 break;
             case 3:
                 DialogueManager.StartConversation(tooMuchAirE);
@@ -237,17 +236,17 @@ public class DiagnoseManager : MonoBehaviour
 
         }
 
-        
+
     }
 
-    public void Choice()
+    /*public void Choice()
     {
         DialogueManager.StartConversation(choose);
         isOpen = true;
         chatBox.SetActive(false);
         InteractWindow.SetActive(true);
         StartWindow.SetActive(true);
-    }
+    }*/
 
     /*public void MentalCheck2()
     {
