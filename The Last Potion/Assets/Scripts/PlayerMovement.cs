@@ -5,6 +5,9 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    public InventoryObject inventory;
+    public static PlayerMovement Instance { get; private set; }
+
     public float moveSpeed = 2f, sprintSpeed = 5f;
     public LayerMask interactableLayer;
 
@@ -20,6 +23,11 @@ public class PlayerMovement : MonoBehaviour
         
     }
 
+    private void Awake()
+    {
+        Instance = this;
+
+    }
     public void HandleUpdate()
     {
         //Movement Axis / squash vertical axis by 2
@@ -68,5 +76,31 @@ public class PlayerMovement : MonoBehaviour
         {
             rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
         }
+    }
+
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        var item = collision.GetComponent<groundItem>();
+        if (item)
+        {
+            inventory.AddItem(new Item(item.item), 1);
+            Destroy(collision.gameObject);
+        }
+    }
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.C))
+        {
+            inventory.Save();
+        }
+        if(Input.GetKeyDown(KeyCode.V))
+        {
+            inventory.Load();
+        }
+    }
+    private void OnApplicationQuit()
+    {
+        inventory.Container.Items.Clear();
     }
 }

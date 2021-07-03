@@ -6,7 +6,6 @@ public class GameManager : MonoBehaviour
 {
     public enum GameState {  FreeRoam, Dialogue}
 
-    private Inventory inventory;
 
     public static GameManager instance;
     public int day;
@@ -28,7 +27,6 @@ public class GameManager : MonoBehaviour
 
         state = GameState.FreeRoam;
 
-        inventory = new Inventory();
     }
 
     public void Update()

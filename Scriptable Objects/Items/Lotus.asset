@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e464a5c16dd97854eb32c3010d08c1e3, type: 3}
+  m_Name: Lotus
+  m_EditorClassIdentifier: 
+  Id: 2
+  uiDisplay: {fileID: 21300000, guid: 9b7cc0581fd4fde4e9af7792f27b01b8, type: 3}
+  type: 0
+  description: 
+  buffs:
+  - attribute: 1
+    value: 8
+  - attribute: 2
+    value: 4
+  - attribute: 0
+    value: -6
