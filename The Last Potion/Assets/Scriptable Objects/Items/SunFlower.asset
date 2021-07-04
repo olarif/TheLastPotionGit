@@ -16,3 +16,10 @@ MonoBehaviour:
   uiDisplay: {fileID: 21300000, guid: 1c3ddcb6a5e7ed745a41e06685e49965, type: 3}
   type: 0
   description: 
+  buffs:
+  - attribute: 0
+    value: 8
+  - attribute: 3
+    value: 4
+  - attribute: 1
+    value: -6

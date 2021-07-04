@@ -15,4 +15,54 @@ MonoBehaviour:
   savePath: 
   database: {fileID: 11400000, guid: 728a5ca5d43f55742b5ba52ffcb39b3c, type: 2}
   Container:
-    itemList: []
+    itemList:
+    - AllowedItems: 
+      parent: {fileID: 0}
+      ID: -1
+      item:
+        Name: 
+        Id: -1
+        buffs: []
+      amount: 0
+    - AllowedItems: 
+      parent: {fileID: 0}
+      ID: 3
+      item:
+        Name: Ginger
+        Id: 3
+        buffs:
+        - attribute: 3
+          value: 0
+        - attribute: 1
+          value: 0
+        - attribute: 2
+          value: 0
+      amount: 6
+    - AllowedItems: 
+      parent: {fileID: 0}
+      ID: 0
+      item:
+        Name: SunFlower
+        Id: 0
+        buffs:
+        - attribute: 0
+          value: 0
+        - attribute: 3
+          value: 0
+        - attribute: 1
+          value: 0
+      amount: 7
+    - AllowedItems: 
+      parent: {fileID: 0}
+      ID: 1
+      item:
+        Name: Lotus
+        Id: 1
+        buffs:
+        - attribute: 1
+          value: 0
+        - attribute: 2
+          value: 0
+        - attribute: 0
+          value: 0
+      amount: 5

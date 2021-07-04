@@ -9,18 +9,19 @@ using UnityEngine.UI;
 public abstract class UserInterface : MonoBehaviour
 {
     public PlayerMovement player;
-
     public InventoryObject inventory;
     public Dictionary<GameObject, InventorySlot> itemsDisplayed = new Dictionary<GameObject, InventorySlot>();
     // Start is called before the first frame update
 
     void Start()
     {
-        //for (int i = 0; i < inventory.Container.itemList.Length; i++)
-        //{
-        //    inventory.Container.itemList[i].parent = this;
-        //}
+        for (int i = 0; i < inventory.Container.itemList.Length; i++)
+        {
+            inventory.Container.itemList[i].parent = this;
+        }
         CreateSlots();
+        AddEvent(gameObject, EventTriggerType.PointerEnter, delegate { OnEnterInterface(gameObject); });
+        AddEvent(gameObject, EventTriggerType.PointerExit, delegate { OnExitInterface(gameObject); });
     }
 
     // Update is called once per frame
@@ -35,14 +36,14 @@ public abstract class UserInterface : MonoBehaviour
         {
             if (_slot.Value.ID >= 0)
             {
-                _slot.Key.transform.GetChild(0).GetComponentInChildren<Image>().sprite = inventory.database.GetItem[_slot.Value.item.Id].uiDisplay;
-                _slot.Key.transform.GetChild(0).GetComponentInChildren<Image>().color = new Color(1, 1, 1, 1);
+                _slot.Key.transform.GetChild(0).GetComponent<Image>().sprite = inventory.database.GetItem[_slot.Value.item.Id].uiDisplay;
+                _slot.Key.transform.GetChild(0).GetComponent<Image>().color = new Color(1, 1, 1, 1);
                 _slot.Key.GetComponentInChildren<TextMeshProUGUI>().text = _slot.Value.amount == 1 ? "" : _slot.Value.amount.ToString("n0");
             }
             else
             {
-                _slot.Key.transform.GetChild(0).GetComponentInChildren<Image>().sprite = null;
-                _slot.Key.transform.GetChild(0).GetComponentInChildren<Image>().color = new Color(1, 1, 1, 0);
+                _slot.Key.transform.GetChild(0).GetComponent<Image>().sprite = null;
+                _slot.Key.transform.GetChild(0).GetComponent<Image>().color = new Color(1, 1, 1, 0);
                 _slot.Key.GetComponentInChildren<TextMeshProUGUI>().text = "";
             }
         }
@@ -67,6 +68,14 @@ public abstract class UserInterface : MonoBehaviour
         player.mouseItem.hoverObj = null;
         player.mouseItem.hoverItem = null;
     }
+    public void OnEnterInterface(GameObject obj)
+    {
+        player.mouseItem.ui = obj.GetComponent<UserInterface>();
+    }
+    public void OnExitInterface(GameObject obj)
+    {
+        player.mouseItem.ui = null;
+    }
     public void OnDragStart(GameObject obj)
     {
         var mouseObject = new GameObject();
@@ -84,13 +93,22 @@ public abstract class UserInterface : MonoBehaviour
     }
     public void OnDragEnd(GameObject obj)
     {
+        //var itemOnMouse = player.mouseItem;
+        //var mouseHoverItem = itemOnMouse.hoverItem;
+        //var mouseHoverObj = itemOnMouse.hoverObj;
+        //var GetItemObject = inventory.database.GetItem;
+        
         if (player.mouseItem.hoverObj)
         {
-            inventory.MoveItem(itemsDisplayed[obj], /*player.mouseItem.hoverItem.parent.*/itemsDisplayed[player.mouseItem.hoverObj]);
+            //if (mouseHoverItem.CanPlaceInSlot(GetItemObject[itemsDisplayed[obj].ID]) && (mouseHoverItem.item.Id <= -1 || (mouseHoverItem.item.Id >= 0 && itemsDisplayed[obj].CanPlaceInSlot(GetItemObject[mouseHoverItem.item.Id]))))
+            inventory.MoveItem(itemsDisplayed[obj], player.mouseItem.hoverItem.parent.itemsDisplayed[player.mouseItem.hoverObj]);
+                 
         }
+        
+        
         else
         {
-            inventory.RemoveItem(itemsDisplayed[obj].item);
+            //inventory.RemoveItem(itemsDisplayed[obj].item);
         }
         Destroy(player.mouseItem.obj);
         player.mouseItem.item = null;
@@ -103,6 +121,7 @@ public abstract class UserInterface : MonoBehaviour
 }
 public class MouseItem
 {
+    public UserInterface ui;
     public GameObject obj;
     public InventorySlot item;
     public InventorySlot hoverItem;
