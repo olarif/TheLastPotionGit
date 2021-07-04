@@ -7,7 +7,7 @@ using TMPro;
 public class DiagnoseManager : MonoBehaviour
 {
     public GameObject InteractWindow;
-    public GameObject StartWindow;
+    //public GameObject StartWindow;
     public GameObject chatBox;
     new public Transform transform;
     public int day;
@@ -284,7 +284,7 @@ public class DiagnoseManager : MonoBehaviour
         isOpen = true;
         chatBox.SetActive(false);
         InteractWindow.SetActive(true);
-        StartWindow.SetActive(true);
+        //StartWindow.SetActive(true);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

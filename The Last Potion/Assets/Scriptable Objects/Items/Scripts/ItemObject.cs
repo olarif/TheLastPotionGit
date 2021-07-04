@@ -10,10 +10,10 @@ public enum ItemType
 }
 public enum Attributes
 {
-    FireValue,
-    WaterValue,
-    AirValue,
-    EarthValue
+    fireValue,
+    waterValue,
+    airValue,
+    earthValue
 }
 public abstract class ItemObject : ScriptableObject
 {
@@ -22,7 +22,7 @@ public abstract class ItemObject : ScriptableObject
     public ItemType type;
     [TextArea(15, 20)]
     public string description;
-    //public ItemBuff[] buffs;
+    public ItemBuff[] buffs;
 
     public Item CreateItem()
     {
@@ -36,32 +36,24 @@ public class Item
 {
     public string Name;
     public int Id;
-    //public ItemBuff[] buffs;
+    public ItemBuff[] buffs;
     public Item(ItemObject item)
     {
         Name = item.name;
         Id = item.Id;
-        //buffs = new ItemBuff[item.buffs.Length];
-        //for (int i = 0; i < buffs.Length; i++)
-        //{
-        //    buffs[i] = new ItemBuff(item.buffs[i].min, item.buffs[i].max);
-        //}
+        buffs = new ItemBuff[item.buffs.Length];
+        for (int i = 0; i < buffs.Length; i++)
+        {
+            buffs[i] = new ItemBuff()
+            {
+                attribute = item.buffs[i].attribute
+            };
+        }
     }
 }
-/*public class ItemBuff
+[System.Serializable]
+public class ItemBuff
 {
     public Attributes attribute;
     public float value;
-    public int min;
-    public int max;
-    public ItemBuff(int _min, int _max)
-    {
-        min = _min;
-        max = _max;
-        GenerateValue();
-    }
-    public void GenerateValue()
-    {
-        value = UnityEngine.Random.Range(min, max);
-    }
-}*/
+}

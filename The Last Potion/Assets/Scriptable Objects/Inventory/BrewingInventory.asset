@@ -10,6 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 24d36a2ce42742345ade01e631019b5e, type: 3}
-  m_Name: Brewing Inventory
+  m_Name: BrewingInventory
   m_EditorClassIdentifier: 
-  Container: []
+  savePath: 
+  database: {fileID: 11400000, guid: 728a5ca5d43f55742b5ba52ffcb39b3c, type: 2}
+  Container:
+    itemList: []
