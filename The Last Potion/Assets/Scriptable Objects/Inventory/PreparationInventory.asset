@@ -10,23 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 24d36a2ce42742345ade01e631019b5e, type: 3}
-  m_Name: BrewingInventory
+  m_Name: PreparationInventory
   m_EditorClassIdentifier: 
-  savePath: 
+  savePath: /preparation.Save
   database: {fileID: 11400000, guid: 728a5ca5d43f55742b5ba52ffcb39b3c, type: 2}
   Container:
-    itemList:
-    - AllowedItems: 
-      parent: {fileID: 0}
-      ID: -1
+    slotArray:
+    - AllowedItems: 00000000
       item:
         Name: 
         Id: -1
         buffs: []
       amount: 0
-    - AllowedItems: 
-      parent: {fileID: 0}
-      ID: 3
+    - AllowedItems: 00000000
       item:
         Name: Ginger
         Id: 3
@@ -37,32 +33,16 @@ MonoBehaviour:
           value: 0
         - attribute: 2
           value: 0
-      amount: 6
-    - AllowedItems: 
-      parent: {fileID: 0}
-      ID: 0
+      amount: 4
+    - AllowedItems: 00000000
       item:
-        Name: SunFlower
-        Id: 0
-        buffs:
-        - attribute: 0
-          value: 0
-        - attribute: 3
-          value: 0
-        - attribute: 1
-          value: 0
-      amount: 7
-    - AllowedItems: 
-      parent: {fileID: 0}
-      ID: 1
+        Name: 
+        Id: -1
+        buffs: []
+      amount: 0
+    - AllowedItems: 00000000
       item:
-        Name: Lotus
-        Id: 1
-        buffs:
-        - attribute: 1
-          value: 0
-        - attribute: 2
-          value: 0
-        - attribute: 0
-          value: 0
-      amount: 5
+        Name: 
+        Id: -1
+        buffs: []
+      amount: 0

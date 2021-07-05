@@ -12,14 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b703dc059e13f2b4bbab3d8adc805937, type: 3}
   m_Name: SunFlower
   m_EditorClassIdentifier: 
-  Id: 0
   uiDisplay: {fileID: 21300000, guid: 1c3ddcb6a5e7ed745a41e06685e49965, type: 3}
+  stackable: 1
   type: 0
   description: 
-  buffs:
-  - attribute: 0
-    value: 8
-  - attribute: 3
-    value: 4
-  - attribute: 1
-    value: -6
+  data:
+    Name: 
+    Id: 0
+    buffs:
+    - attribute: 0
+      value: 4
+    - attribute: 3
+      value: 2
+    - attribute: 1
+      value: -3

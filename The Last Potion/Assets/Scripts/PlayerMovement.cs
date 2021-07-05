@@ -5,9 +5,9 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public MouseItem mouseItem = new MouseItem();
-
+    
     public InventoryObject inventory;
+    public InventoryObject preparation;
     public static PlayerMovement Instance { get; private set; }
 
     public float moveSpeed = 2f, sprintSpeed = 5f;
@@ -60,10 +60,12 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.C))
         {
             inventory.Save();
+            preparation.Save();
         }
         if (Input.GetKeyDown(KeyCode.V))
         {
             inventory.Load();
+            preparation.Save();
         }
 
     }
@@ -96,8 +98,11 @@ public class PlayerMovement : MonoBehaviour
         var item = collision.GetComponent<groundItem>();
         if (item)
         {
-            inventory.AddItem(new Item(item.item), 1);
-            Destroy(collision.gameObject);
+            Item _item = new Item(item.itemOnGround);
+            if (inventory.AddItem(_item, 1))
+            {
+                Destroy(collision.gameObject);
+            }
         }
     }
 #if UNITY_EDITOR
@@ -123,6 +128,7 @@ public class PlayerMovement : MonoBehaviour
 #endif
     private void OnApplicationQuit()
     {
-        inventory.Container.itemList = new InventorySlot[20];
+        inventory.Container.Clear();
+        preparation.Container.Clear();
     }
 }

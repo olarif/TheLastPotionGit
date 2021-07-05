@@ -12,14 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b703dc059e13f2b4bbab3d8adc805937, type: 3}
   m_Name: Ginger
   m_EditorClassIdentifier: 
-  Id: 3
   uiDisplay: {fileID: 21300000, guid: 7ac18b234457df84293efa484dee35e9, type: 3}
+  stackable: 1
   type: 0
   description: 
-  buffs:
-  - attribute: 3
-    value: 8
-  - attribute: 1
-    value: 4
-  - attribute: 2
-    value: -6
+  data:
+    Name: 
+    Id: 3
+    buffs:
+    - attribute: 3
+      value: 4
+    - attribute: 1
+      value: 2
+    - attribute: 2
+      value: -3
