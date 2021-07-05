@@ -65,7 +65,7 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.V))
         {
             inventory.Load();
-            preparation.Save();
+            preparation.Load();
         }
 
     }
@@ -128,7 +128,7 @@ public class PlayerMovement : MonoBehaviour
 #endif
     private void OnApplicationQuit()
     {
-        inventory.Container.Clear();
-        preparation.Container.Clear();
+        inventory.Clear();
+        preparation.Clear();
     }
 }

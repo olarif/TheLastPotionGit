@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: SunFlower
   m_EditorClassIdentifier: 
   uiDisplay: {fileID: 21300000, guid: 1c3ddcb6a5e7ed745a41e06685e49965, type: 3}
-  stackable: 1
+  stackable: 0
   type: 0
   description: 
   data:

@@ -57,8 +57,13 @@ public class Item
     }
 }
 [System.Serializable]
-public class ItemBuff
+public class ItemBuff : IModifiers
 {
     public Attributes attribute;
-    public float value;
+    public int value;
+
+    public void AddValue(ref int baseValue)
+    {
+        baseValue += value;
+    }
 }
