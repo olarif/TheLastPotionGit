@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8322275123255030037}
   - component: {fileID: 6185448927107147745}
+  - component: {fileID: 5618863630591322898}
   m_Layer: 0
   m_Name: "\u0441arriage"
   m_TagString: Untagged
@@ -70,7 +71,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   m_Sprite: {fileID: 21300000, guid: 72c04a8c5e8061a40a540e1ba26d07a3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -82,3 +83,28 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!68 &5618863630591322898
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7864572151380512869}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -0.09688258, y: -0.57390594}
+  - {x: 1.0426655, y: -1.2625961}
+  - {x: 1.8269043, y: -0.8261757}
+  - {x: 0.6128788, y: -0.095336914}
+  - {x: -0.08167577, y: -0.5565338}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0

@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5259100964666442076}
   - component: {fileID: 2750343399317325541}
+  - component: {fileID: 6869828430718673710}
   m_Layer: 0
   m_Name: grave-3
   m_TagString: Untagged
@@ -70,7 +71,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   m_Sprite: {fileID: 21300000, guid: bd9597ee8e4229641b78108a86265eea, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -81,4 +82,29 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
+  m_SpriteSortPoint: 1
+--- !u!68 &6869828430718673710
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6700161287588710694}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.12, y: -1.27}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: 0.34493375, y: 1.1388016}
+  - {x: -0.89689636, y: 0.46575546}
+  - {x: 0.012683868, y: -0.042438507}
+  - {x: 1.2371826, y: 0.637516}
+  - {x: 0.34824824, y: 1.1317253}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0

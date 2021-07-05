@@ -11,9 +11,14 @@ public class Transparency : MonoBehaviour
         sprite = GetComponent<SpriteRenderer>();
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        sprite.color = new Color(1, 1, 1, .6f);
+    }
+
     private void OnTriggerStay2D(Collider2D collision)
     {
-        sprite.color = new Color(1, 1, 1, .3f);
+        //sprite.color = new Color(1, 1, 1, .3f);
         //sprite.sortingOrder = 4;
     }
 
