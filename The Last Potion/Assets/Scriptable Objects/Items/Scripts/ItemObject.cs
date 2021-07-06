@@ -10,10 +10,10 @@ public enum ItemType
 }
 public enum AttributeType
 {
-    fireValue, 
+    fireValue,
+    earthValue,
     waterValue,
-    airValue,
-    earthValue
+    airValue
 }
 [CreateAssetMenu(fileName = "New Item", menuName = "Inventory System/Items/item")]
 public class ItemObject : ScriptableObject
@@ -70,9 +70,9 @@ public class ItemBuff : IModifier
         //GenerateValue();
     }
 
-    public void AddValue(ref int baseValue)
+    public void AddValue(ref int baseValue, int item_amount)
     {
-        baseValue += value;
+        baseValue +=( value * item_amount);
     }
     //public void GenerateValue()
     //{

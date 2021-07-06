@@ -35,15 +35,17 @@ public class ModifiableInt
         ValueModified -= method;
     }
 
-    public void UpdateModifiedValue(int itemAmount)
+    public void UpdateModifiedValue(int _amount)
     {
         var valueToAdd = 0;
-        for (int i = 0; i < modifiers.Count; i++)
-            {
-                modifiers[i].AddValue(ref valueToAdd);
-            }
+        for (int j = 0; j < modifiers.Count; j++)
+        {
+            modifiers[j].AddValue(ref valueToAdd, _amount);
+
+            ModifiedValue = baseValue + valueToAdd;
+        }
         
-        ModifiedValue = baseValue + (valueToAdd * itemAmount);
+        
         if (ValueModified != null)
             ValueModified.Invoke();
         

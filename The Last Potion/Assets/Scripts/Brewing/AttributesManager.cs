@@ -2,12 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BrewingManager : MonoBehaviour
+public class AttributesManager : MonoBehaviour
 {
     private bool isOpen;
     //private bool trigger;
     public GameObject chatBox;
-    public InventoryObject preparation;
+    public InventoryObject ReadInventory;
 
     public Attribute[] attributesArray;
 
@@ -17,10 +17,10 @@ public class BrewingManager : MonoBehaviour
         {
             attributesArray[i].SetParent(this);
         }
-        for (int i = 0; i < preparation.GetSlots.Length; i++)
+        for (int i = 0; i < ReadInventory.GetSlots.Length; i++)
         {
-            preparation.GetSlots[i].OnBeforeUpdate += OnRemoveItem;
-            preparation.GetSlots[i].OnAfterUpdate += OnAddItem;
+            ReadInventory.GetSlots[i].OnBeforeUpdate += OnRemoveItem;
+            ReadInventory.GetSlots[i].OnAfterUpdate += OnAddItem;
 
         }
     }
@@ -94,23 +94,7 @@ public class BrewingManager : MonoBehaviour
     {
         Debug.Log(string.Concat(attribute.type, " was updated! Value is now ", attribute.value.ModifiedValue));
     }
-    public Attribute FindAttributeType(AttributeType _type)
-    {
-        for (int i = 0; i < attributesArray.Length; i++)
-        {
-            if (attributesArray[i].type == _type)
-            {
-                return attributesArray[i];
-            }
-        }
-        return null;
-    }
-    public int GetValueOfAttribute(AttributeType _type)
-    {
-        Attribute _attribute = FindAttributeType(_type);
-        if (_attribute == null) return 0;
-        else return _attribute.value.ModifiedValue;
-    }
+    
 }
 public delegate void AttributeDisplayUpdated(Attribute _attribute);
 [System.Serializable]
@@ -118,9 +102,9 @@ public class Attribute
 {
     public AttributeType type;
     [System.NonSerialized]
-    public BrewingManager parent1;
+    public AttributesManager parent1;
     [System.NonSerialized]
-    public BrewingDisplay parent2;
+    public PreparingDisplay parent2;
     [System.NonSerialized]
     public GameObject attributeDisplay;
     [System.NonSerialized]
@@ -129,7 +113,7 @@ public class Attribute
     public AttributeDisplayUpdated OnBeforeUpdate;
     public ModifiableInt value;
 
-    public void SetParent(BrewingManager _parent)
+    public void SetParent(AttributesManager _parent)
     {
         parent1 = _parent;
         value = new ModifiableInt(AttributeModified);
