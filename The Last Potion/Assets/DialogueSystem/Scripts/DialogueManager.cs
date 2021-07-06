@@ -38,6 +38,8 @@ public class DialogueManager : MonoBehaviour
 
     public void Update()
     {
+
+
         if (instance.currentIndex > 0)
         {
             if (isOpen && Input.GetKeyDown(KeyCode.E))

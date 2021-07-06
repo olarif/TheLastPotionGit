@@ -12,17 +12,11 @@ public class DiagnoseManager : MonoBehaviour
     new public Transform transform;
     public int day;
     public int elementState;
-    //elementState == 1 --> too much fire
-    //elementState == 2 --> too much water
-    //elementState == 3 --> too much air
-    //elementState == 4 --> too much earth
 
     private bool isOpen;
     private bool trigger;
 
     //Conversations
-
-    //Choose
 
     public Conversation choose;
 
@@ -86,42 +80,10 @@ public class DiagnoseManager : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.E))
             {
                 //Open();
-                Starter();
             }
         }
     }
 
-    public void Starter()
-    {
-        
-        switch ( elementState )
-        {
-            case 1:
-                if (waterBottle == false)
-                {
-                    DialogueManager.StartConversation(tooMuchFire1_1);
-                }
-                else
-                {
-                    DialogueManager.StartConversation(tooMuchFire1_2);
-                    //Choice();
-                }
-                break;
-            case 2:
-                DialogueManager.StartConversation(tooMuchWater1);
-                break;
-            case 3:
-                DialogueManager.StartConversation(tooMuchAir1);
-                //Choice();
-                break;
-            case 4:
-                DialogueManager.StartConversation(tooMuchEarth1);
-                break;
-
-        }
-        Open();
-
-    }
 
     public void checkBreath()
     {
@@ -141,9 +103,6 @@ public class DiagnoseManager : MonoBehaviour
                 break;
 
         }
-        Open();
-
-
     }
 
     public void checkForehead()
@@ -164,9 +123,6 @@ public class DiagnoseManager : MonoBehaviour
                 break;
 
         }
-        Open();
-
-
     }
 
     public void checkHand()
@@ -188,9 +144,6 @@ public class DiagnoseManager : MonoBehaviour
                 break;
 
         }
-        Open();
-
-
     }
 
     public void checkTalk()
@@ -212,9 +165,6 @@ public class DiagnoseManager : MonoBehaviour
                 break;
 
         }
-        Open();
-
-
     }
 
     public void checkEnd()
@@ -233,35 +183,8 @@ public class DiagnoseManager : MonoBehaviour
             case 4:
                 DialogueManager.StartConversation(tooMuchEarthE);
                 break;
-
         }
-
-
     }
-
-    /*public void Choice()
-    {
-        DialogueManager.StartConversation(choose);
-        isOpen = true;
-        chatBox.SetActive(false);
-        InteractWindow.SetActive(true);
-        StartWindow.SetActive(true);
-    }*/
-
-    /*public void MentalCheck2()
-    {
-        switch (day){
-            case 1:
-                Debug.Log("Mental 2: Day 1");
-                //DialogueManager.StartConversation(Mental1);
-                break;
-            case 2:
-                Debug.Log("Mental 2: Day 2");
-                //DialogueManager.StartConversation(Mental2);
-                break;
-        }
-        
-    }*/
 
     public void EndConvo()
     {
@@ -299,91 +222,3 @@ public class DiagnoseManager : MonoBehaviour
         Close();
     }
 }
-
-
-
-
-
-
-/*
- if (isOpen)
-    {
-        if (StartWindow.activeSelf)
-        {
-            if (Input.GetKeyDown(KeyCode.Alpha1))
-            {
-                Close();
-                DialogueManager.StartConversation(talk);
-            }
-
-            else if (Input.GetKeyDown(KeyCode.Alpha2))
-            {
-                StartWindow.SetActive(false);
-                DiagnoseWindow.SetActive(true);
-            }
-
-            else if (Input.GetKeyDown(KeyCode.Alpha3))
-            {
-                Close();
-            }
-        }
-
-        else if (DiagnoseWindow.activeSelf)
-        {
-            if (Input.GetKeyDown(KeyCode.Alpha1))
-            {
-                Observe();
-            }
-            else if (Input.GetKeyDown(KeyCode.Alpha2))
-            {
-                Feeling();
-            }
-            else if (Input.GetKeyDown(KeyCode.Alpha3))
-            {
-                Close();
-            }
-        }
-    }
-
-
-
-public void Observe()
-{
-    if (DialogueManager.instance.currentIndex == 0)
-    {
-        Close();
-        DialogueManager.StartConversation(observe);
-    }
-
-    if (DialogueManager.instance.currentIndex > DialogueManager.instance.currentConvo.GetLength() - 1)
-    {
-        Open();
-    }
-}
-
-public void Feeling()
-{
-    Close();
-}
-
-public void Close()
-{
-    trigger = false;
-    isOpen = false;
-
-    InteractWindow.SetActive(false);
-    StartWindow.SetActive(false);
-    DiagnoseWindow.SetActive(false);
-}
-
-public void Open()
-{
-    isOpen = true;
-    chatBox.SetActive(false);
-    InteractWindow.SetActive(true);
-    StartWindow.SetActive(true);
-}
-
-*/
-
-

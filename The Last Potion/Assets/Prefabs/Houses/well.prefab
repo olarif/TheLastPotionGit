@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 6616497107226446686}
   - component: {fileID: 5443645148106950044}
-  - component: {fileID: 2970887759869411199}
   - component: {fileID: 4903592362763738801}
   - component: {fileID: 3814380283884705995}
+  - component: {fileID: 954866885}
   m_Layer: 0
   m_Name: well
   m_TagString: Untagged
@@ -73,7 +73,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 5
+  m_SortingOrder: 4
   m_Sprite: {fileID: 21300000, guid: 9615951c046ed314cbe5f15b85efb294, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -85,18 +85,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &2970887759869411199
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3794669365472152549}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3fd9b33271f804f469732921d2d26377, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!68 &4903592362763738801
 EdgeCollider2D:
   m_ObjectHideFlags: 0
@@ -154,11 +142,27 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.40504557, y: -0.11000001}
-      - {x: -0.5050568, y: 1.59}
-      - {x: -1.2151366, y: 1.99}
-      - {x: -0.32503656, y: 2.51}
-      - {x: 0.5550624, y: 2.32}
-      - {x: 1.9352176, y: 1.96}
-      - {x: 1.2451401, y: 1.57}
-      - {x: 1.2751434, y: -0.11000001}
+    - - {x: -0.8462325, y: -0.3541559}
+      - {x: -0.94491196, y: 0.45605087}
+      - {x: -0.808342, y: 0.809515}
+      - {x: -0.7736401, y: 1.382059}
+      - {x: -1.6585323, y: 1.9988215}
+      - {x: -0.7495074, y: 3.3286302}
+      - {x: 0.29912865, y: 3.2317755}
+      - {x: 2.2420852, y: 2.05474}
+      - {x: 1.7036381, y: 1.4165653}
+      - {x: 1.9805565, y: 0.826458}
+      - {x: 1.695797, y: 0.30566406}
+      - {x: 1.6934974, y: -0.34730852}
+--- !u!114 &954866885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3794669365472152549}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80704935fc901bb4a9ca51dafce51e4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
