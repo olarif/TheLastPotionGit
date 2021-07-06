@@ -8,14 +8,15 @@ public enum ItemType
     Potion,
     Others
 }
-public enum Attributes
+public enum AttributeType
 {
     fireValue, 
     waterValue,
     airValue,
     earthValue
 }
-public abstract class ItemObject : ScriptableObject
+[CreateAssetMenu(fileName = "New Item", menuName = "Inventory System/Items/item")]
+public class ItemObject : ScriptableObject
 {
     public Sprite uiDisplay;
     public bool stackable;
@@ -35,7 +36,7 @@ public abstract class ItemObject : ScriptableObject
 public class Item
 {
     public string Name;
-    public int Id;
+    public int Id = -1;
     public ItemBuff[] buffs;
     public Item()
     {
@@ -49,7 +50,7 @@ public class Item
         buffs = new ItemBuff[item.data.buffs.Length];
         for (int i = 0; i < buffs.Length; i++)
         {
-            buffs[i] = new ItemBuff()
+            buffs[i] = new ItemBuff(item.data.buffs[i].value)
             {
                 attribute = item.data.buffs[i].attribute
             };
@@ -57,13 +58,24 @@ public class Item
     }
 }
 [System.Serializable]
-public class ItemBuff : IModifiers
+public class ItemBuff : IModifier
 {
-    public Attributes attribute;
+    public AttributeType attribute;
     public int value;
+    //public int min;
+    //public int max;
+    public ItemBuff(int _value)
+    {
+        value = _value;
+        //GenerateValue();
+    }
 
     public void AddValue(ref int baseValue)
     {
         baseValue += value;
     }
+    //public void GenerateValue()
+    //{
+    //    value = UnityEngine.Random.Range(min, max);
+    //}
 }

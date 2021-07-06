@@ -19,13 +19,13 @@ public class BrewingManager : MonoBehaviour
         }
         for (int i = 0; i < preparation.GetSlots.Length; i++)
         {
-            preparation.GetSlots[i].OnBeforeUpdate += OnBeforeSlotUpdate;
-            preparation.GetSlots[i].OnAfterUpdate += OnAfterSlotUpdate;
+            preparation.GetSlots[i].OnBeforeUpdate += OnRemoveItem;
+            preparation.GetSlots[i].OnAfterUpdate += OnAddItem;
 
         }
     }
 
-    public void OnBeforeSlotUpdate(InventorySlot _slot)
+    public void OnRemoveItem(InventorySlot _slot)
     {
         if (_slot.itemObject == null)
             return;
@@ -41,7 +41,7 @@ public class BrewingManager : MonoBehaviour
                     for (int j = 0; j < attributesArray.Length; j++)
                     {
                         if (attributesArray[j].type == _slot.item.buffs[i].attribute)
-                            attributesArray[j].value.RemoveModifier(_slot.item.buffs[i]);
+                            attributesArray[j].value.RemoveModifier(_slot.item.buffs[i], _slot.amount);
                     }
                 }
                 break;
@@ -51,7 +51,7 @@ public class BrewingManager : MonoBehaviour
                 break;
         }
     }
-    public void OnAfterSlotUpdate(InventorySlot _slot)
+    public void OnAddItem(InventorySlot _slot)
     {
         if (_slot.itemObject == null)
             return;
@@ -67,7 +67,7 @@ public class BrewingManager : MonoBehaviour
                     for (int j = 0; j < attributesArray.Length; j++)
                     {
                         if (attributesArray[j].type == _slot.item.buffs[i].attribute)
-                            attributesArray[j].value.AddModifier(_slot.item.buffs[i]);
+                            attributesArray[j].value.AddModifier(_slot.item.buffs[i], _slot.amount);
                     }
                 }
                 
@@ -94,23 +94,62 @@ public class BrewingManager : MonoBehaviour
     {
         Debug.Log(string.Concat(attribute.type, " was updated! Value is now ", attribute.value.ModifiedValue));
     }
+    public Attribute FindAttributeType(AttributeType _type)
+    {
+        for (int i = 0; i < attributesArray.Length; i++)
+        {
+            if (attributesArray[i].type == _type)
+            {
+                return attributesArray[i];
+            }
+        }
+        return null;
+    }
+    public int GetValueOfAttribute(AttributeType _type)
+    {
+        Attribute _attribute = FindAttributeType(_type);
+        if (_attribute == null) return 0;
+        else return _attribute.value.ModifiedValue;
+    }
 }
+public delegate void AttributeDisplayUpdated(Attribute _attribute);
 [System.Serializable]
 public class Attribute
 {
+    public AttributeType type;
     [System.NonSerialized]
-    public BrewingManager parent;
-    public Attributes type;
+    public BrewingManager parent1;
+    [System.NonSerialized]
+    public BrewingDisplay parent2;
+    [System.NonSerialized]
+    public GameObject attributeDisplay;
+    [System.NonSerialized]
+    public AttributeDisplayUpdated OnAfterUpdate;
+    [System.NonSerialized]
+    public AttributeDisplayUpdated OnBeforeUpdate;
     public ModifiableInt value;
 
     public void SetParent(BrewingManager _parent)
     {
-        parent = _parent;
+        parent1 = _parent;
         value = new ModifiableInt(AttributeModified);
     }
     public void AttributeModified()
     {
-        parent.AttributeModified(this);
+        parent1.AttributeModified(this);
+    }
+
+    public Attribute(ModifiableInt _value)
+    {
+        UpdateAttribute(_value);
+    }
+    public void UpdateAttribute(ModifiableInt _value)
+    {
+        if (OnBeforeUpdate != null)
+            OnBeforeUpdate.Invoke(this);
+        value = _value;
+        if (OnAfterUpdate != null)
+            OnAfterUpdate.Invoke(this);
     }
 
 }

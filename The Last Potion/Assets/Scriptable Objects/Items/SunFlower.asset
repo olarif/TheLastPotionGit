@@ -9,11 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b703dc059e13f2b4bbab3d8adc805937, type: 3}
+  m_Script: {fileID: 11500000, guid: 36c92f6916f51c84180ccd6986ebd922, type: 3}
   m_Name: SunFlower
   m_EditorClassIdentifier: 
   uiDisplay: {fileID: 21300000, guid: 1c3ddcb6a5e7ed745a41e06685e49965, type: 3}
-  stackable: 0
+  stackable: 1
   type: 0
   description: 
   data:

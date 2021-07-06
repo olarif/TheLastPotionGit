@@ -32,7 +32,7 @@ public class InventoryObject : ScriptableObject
         if (EmptySlotCount <= 0)
             return false;
         InventorySlot slot = FindItemOnInventory(_item);
-        if(!database.GetItem[_item.Id].stackable || slot == null)
+        if(!database.ItemsArray[_item.Id].stackable || slot == null)
         {
             SetEmptySlot(_item, _amount);
             return true;
@@ -100,6 +100,13 @@ public class InventoryObject : ScriptableObject
         }
     }
 
+    public int GetAmountOfItem(Item _item)
+    {
+        InventorySlot slot = FindItemOnInventory(_item);
+        if (slot == null) return 0;
+        else return slot.amount;
+    }
+
     [ContextMenu("Save")]
     public void Save()
     {
@@ -156,6 +163,7 @@ public class InventorySlot
     public SlotUpdated OnBeforeUpdate;
     public Item item;
     public int amount;
+    
 
     public ItemObject itemObject
     {
@@ -163,7 +171,7 @@ public class InventorySlot
         {
             if (item.Id >= 0)
             {
-                return parent.inventory.database.GetItem[item.Id];
+                return parent.inventory.database.ItemsArray[item.Id];
             }
             return null;
         }
