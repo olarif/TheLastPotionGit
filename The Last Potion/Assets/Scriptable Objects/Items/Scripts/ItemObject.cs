@@ -8,7 +8,7 @@ public enum ItemType
     Potion,
     Others
 }
-public enum AttributeType
+public enum BuffType
 {
     fireValue,
     earthValue,
@@ -30,6 +30,14 @@ public class ItemObject : ScriptableObject
         Item newItem = new Item(this);
         return newItem;
     }
+
+    public ItemObject(Item _item, ItemType _type, bool _stackable, string _description = "")
+    {
+        data = _item;
+        type = _type;
+        stackable = _stackable;
+        description = _description;
+    }
 }
 
 [System.Serializable]
@@ -43,20 +51,13 @@ public class Item
         Name = "";
         Id = -1;
     }
-    public Item(string _name, ItemBuff[] buffs)
+
+    public Item(string _name, ItemBuff[] _buffs)
     {
         this.Name = _name;
-        for (int i = 0; i < Buffs.Length; i++)
-        {
-            //for (int j = 0; j < ; j++)
-            //{
-            //    if (Buffs[i].attribute = buffs[i].attribute)
-            //        this.Buffs[i].value = buffs[i].value;
-
-            //}
-
-        }
+        this.Buffs = _buffs;
     }
+
     public Item(ItemObject item)
     {
         Name = item.name;
@@ -66,15 +67,16 @@ public class Item
         {
             Buffs[i] = new ItemBuff(item.data.Buffs[i].value)
             {
-                attribute = item.data.Buffs[i].attribute
+                bufftype = item.data.Buffs[i].bufftype
             };
         }
     }
 }
+
 [System.Serializable]
 public class ItemBuff : IModifier
 {
-    public AttributeType attribute;
+    public BuffType bufftype;
     public int value;
     //public int min;
     //public int max;
@@ -82,6 +84,12 @@ public class ItemBuff : IModifier
     {
         value = _value;
         //GenerateValue();
+    }
+
+    public ItemBuff(int _value, BuffType _type)
+    {
+        value = _value;
+        bufftype = _type;
     }
 
     public void AddValue(ref int baseValue)
