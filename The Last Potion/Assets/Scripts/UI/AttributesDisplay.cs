@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
-public class PreparingDisplay : MonoBehaviour
+public class AttributesDisplay : MonoBehaviour
 {
     public AttributesManager attriMan;
     public GameObject[] attributeSlot;

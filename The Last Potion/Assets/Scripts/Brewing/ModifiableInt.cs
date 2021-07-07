@@ -40,9 +40,9 @@ public class ModifiableInt
         var valueToAdd = 0;
         for (int j = 0; j < modifiers.Count; j++)
         {
-            modifiers[j].AddValue(ref valueToAdd, _amount);
+            modifiers[j].AddValue(ref valueToAdd);
 
-            ModifiedValue = baseValue + valueToAdd;
+            ModifiedValue = baseValue + (valueToAdd * _amount);
         }
         
         

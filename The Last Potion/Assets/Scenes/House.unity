@@ -796,24 +796,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attributesArray: []
   brewItButton: {fileID: 59238118}
-  brewedInventory: {fileID: 11400000, guid: f853a60aa18a6684f81d10be9283ca10, type: 2}
-  item:
-    Name: 
-    Id: -1
-    buffs: []
-  finishedPotionObject: {fileID: 0}
-  finishedPotion:
-    Name: 
-    Id: -1
-    buffs: []
-  finischedPotionSlot:
-    AllowedItems: 
-    item:
-      Name: 
-      Id: -1
-      buffs: []
-    amount: 0
-  amount: 0
+  BeforeInv: {fileID: 11400000, guid: 869228c6a6120674c992952e0d3f6130, type: 2}
+  AfterInv: {fileID: 11400000, guid: f853a60aa18a6684f81d10be9283ca10, type: 2}
+  amount: 1
 --- !u!224 &74185895 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4411243305931133422, guid: 6245dc853771a3d4aba0dc0409335cae,

@@ -1,8 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 
 public interface IModifier
 {
-    void AddValue(ref int baseValueToAdd, int _amount);
+    void AddValue(ref int baseValueToAdd);
 }

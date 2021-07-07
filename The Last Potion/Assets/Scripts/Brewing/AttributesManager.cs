@@ -36,12 +36,12 @@ public class AttributesManager : MonoBehaviour
             case InterfaceType.Preparation:
                 print(string.Concat("Removed ", _slot.itemObject, " on ", _slot.parent.inventory.type, ", Allowed Items: ", string.Join(", ", _slot.AllowedItems)));
 
-                for (int i = 0; i < _slot.item.buffs.Length; i++)
+                for (int i = 0; i < _slot.item.Buffs.Length; i++)
                 {
                     for (int j = 0; j < attributesArray.Length; j++)
                     {
-                        if (attributesArray[j].type == _slot.item.buffs[i].attribute)
-                            attributesArray[j].value.RemoveModifier(_slot.item.buffs[i], _slot.amount);
+                        if (attributesArray[j].type == _slot.item.Buffs[i].attribute)
+                            attributesArray[j].value.RemoveModifier(_slot.item.Buffs[i], _slot.amount);
                     }
                 }
                 break;
@@ -62,12 +62,12 @@ public class AttributesManager : MonoBehaviour
             case InterfaceType.Preparation:
                 print(string.Concat("Placed ", _slot.itemObject, " on ", _slot.parent.inventory.type, ", Allowed Items: ", string.Join(", ", _slot.AllowedItems)));
 
-                for (int i = 0; i < _slot.item.buffs.Length; i++)
+                for (int i = 0; i < _slot.item.Buffs.Length; i++)
                 {
                     for (int j = 0; j < attributesArray.Length; j++)
                     {
-                        if (attributesArray[j].type == _slot.item.buffs[i].attribute)
-                            attributesArray[j].value.AddModifier(_slot.item.buffs[i], _slot.amount);
+                        if (attributesArray[j].type == _slot.item.Buffs[i].attribute)
+                            attributesArray[j].value.AddModifier(_slot.item.Buffs[i], _slot.amount);
                     }
                 }
                 
@@ -104,7 +104,7 @@ public class Attribute
     [System.NonSerialized]
     public AttributesManager parent1;
     [System.NonSerialized]
-    public PreparingDisplay parent2;
+    public AttributesDisplay parent2;
     [System.NonSerialized]
     public GameObject attributeDisplay;
     [System.NonSerialized]

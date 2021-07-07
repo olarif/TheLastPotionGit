@@ -37,22 +37,36 @@ public class Item
 {
     public string Name;
     public int Id = -1;
-    public ItemBuff[] buffs;
+    public ItemBuff[] Buffs;
     public Item()
     {
         Name = "";
         Id = -1;
     }
+    public Item(string _name, ItemBuff[] buffs)
+    {
+        this.Name = _name;
+        for (int i = 0; i < Buffs.Length; i++)
+        {
+            //for (int j = 0; j < ; j++)
+            //{
+            //    if (Buffs[i].attribute = buffs[i].attribute)
+            //        this.Buffs[i].value = buffs[i].value;
+
+            //}
+
+        }
+    }
     public Item(ItemObject item)
     {
         Name = item.name;
         Id = item.data.Id;
-        buffs = new ItemBuff[item.data.buffs.Length];
-        for (int i = 0; i < buffs.Length; i++)
+        Buffs = new ItemBuff[item.data.Buffs.Length];
+        for (int i = 0; i < Buffs.Length; i++)
         {
-            buffs[i] = new ItemBuff(item.data.buffs[i].value)
+            Buffs[i] = new ItemBuff(item.data.Buffs[i].value)
             {
-                attribute = item.data.buffs[i].attribute
+                attribute = item.data.Buffs[i].attribute
             };
         }
     }
@@ -70,9 +84,9 @@ public class ItemBuff : IModifier
         //GenerateValue();
     }
 
-    public void AddValue(ref int baseValue, int item_amount)
+    public void AddValue(ref int baseValue)
     {
-        baseValue +=( value * item_amount);
+        baseValue += value ;
     }
     //public void GenerateValue()
     //{

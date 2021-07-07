@@ -7,14 +7,14 @@ public class BrewingSystem: MonoBehaviour
     public Attribute[] attributesArray;
 
     public GameObject brewItButton;
-    public InventoryObject brewedInventory;
+    public InventoryObject BeforeInv;
+    public InventoryObject AfterInv;
 
 
-    public Item item;
-    public ItemObject finishedPotionObject;
-    public Item finishedPotion;
-    public InventorySlot finischedPotionSlot;
-    public int amount;
+    private Item item;
+    private Item finishedPotion;
+    private InventorySlot finischedPotionSlot;
+    public int amount = 1;
     //private InventorySlot[,] slotAttribute = new InventorySlot[item.attribute, amount];
 
     public Attribute FindAttributeType(AttributeType _type)
@@ -41,18 +41,20 @@ public class BrewingSystem: MonoBehaviour
 
     public void BrewPotion()
     {
-        brewedInventory.AddItem(4, 1);
+        AfterInv.AddItem(4, 1);
         DataOverWrite();
+        BeforeInv.Clear();
+        
     }
 
 
     public void DataOverWrite()
     {
-        if (brewedInventory.GetSlots[0].item.Id == 4)
+        if (AfterInv.GetSlots[0].item.Id == 4)
         {
             for (int i = 0; i < attributesArray.Length; i++)
             {
-                brewedInventory.GetSlots[0].item.buffs[i].value = attributesArray[i].value.ModifiedValue;
+                AfterInv.GetSlots[0].item.Buffs[i].value = attributesArray[i].value.ModifiedValue;
             }
         }
 
@@ -66,6 +68,6 @@ public class BrewingSystem: MonoBehaviour
     }
     private void OnApplicationQuit()
     {
-        brewedInventory.Clear();
+        AfterInv.Clear();
     }
 }
