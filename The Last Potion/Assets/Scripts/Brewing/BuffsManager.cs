@@ -2,20 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AttributesManager : MonoBehaviour
+public class BuffsManager : MonoBehaviour
 {
     private bool isOpen;
     //private bool trigger;
     public GameObject chatBox;
     public InventoryObject ReadInventory;
 
-    public Attribute[] attributesArray;
+    public Attribute[] buffsArray;
 
     private void Start()
     {
-        for (int i = 0; i < attributesArray.Length; i++)
+        for (int i = 0; i < buffsArray.Length; i++)
         {
-            attributesArray[i].SetParent(this);
+            buffsArray[i].SetParent(this);
         }
         for (int i = 0; i < ReadInventory.GetSlots.Length; i++)
         {
@@ -38,10 +38,10 @@ public class AttributesManager : MonoBehaviour
 
                 for (int i = 0; i < _slot.item.Buffs.Length; i++)
                 {
-                    for (int j = 0; j < attributesArray.Length; j++)
+                    for (int j = 0; j < buffsArray.Length; j++)
                     {
-                        if (attributesArray[j].type == _slot.item.Buffs[i].attribute)
-                            attributesArray[j].value.RemoveModifier(_slot.item.Buffs[i], _slot.amount);
+                        if (buffsArray[j].type == _slot.item.Buffs[i].bufftype)
+                            buffsArray[j].value.RemoveModifier(_slot.item.Buffs[i], _slot.amount);
                     }
                 }
                 break;
@@ -64,10 +64,10 @@ public class AttributesManager : MonoBehaviour
 
                 for (int i = 0; i < _slot.item.Buffs.Length; i++)
                 {
-                    for (int j = 0; j < attributesArray.Length; j++)
+                    for (int j = 0; j < buffsArray.Length; j++)
                     {
-                        if (attributesArray[j].type == _slot.item.Buffs[i].attribute)
-                            attributesArray[j].value.AddModifier(_slot.item.Buffs[i], _slot.amount);
+                        if (buffsArray[j].type == _slot.item.Buffs[i].bufftype)
+                            buffsArray[j].value.AddModifier(_slot.item.Buffs[i], _slot.amount);
                     }
                 }
                 
@@ -100,11 +100,11 @@ public delegate void AttributeDisplayUpdated(Attribute _attribute);
 [System.Serializable]
 public class Attribute
 {
-    public AttributeType type;
+    public BuffType type;
     [System.NonSerialized]
-    public AttributesManager parent1;
+    public BuffsManager parent1;
     [System.NonSerialized]
-    public AttributesDisplay parent2;
+    public BuffsDisplay parent2;
     [System.NonSerialized]
     public GameObject attributeDisplay;
     [System.NonSerialized]
@@ -113,7 +113,7 @@ public class Attribute
     public AttributeDisplayUpdated OnBeforeUpdate;
     public ModifiableInt value;
 
-    public void SetParent(AttributesManager _parent)
+    public void SetParent(BuffsManager _parent)
     {
         parent1 = _parent;
         value = new ModifiableInt(AttributeModified);

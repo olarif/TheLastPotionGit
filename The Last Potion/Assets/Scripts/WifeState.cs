@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class WifeStateManager : MonoBehaviour
+public class WifeState : MonoBehaviour
 {
-    public static WifeStateManager instance;
+    public static WifeState instance;
     public int elementState;
 
     

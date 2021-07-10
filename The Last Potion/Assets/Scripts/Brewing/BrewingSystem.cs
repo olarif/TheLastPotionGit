@@ -17,7 +17,7 @@ public class BrewingSystem: MonoBehaviour
     public int amount = 1;
     //private InventorySlot[,] slotAttribute = new InventorySlot[item.attribute, amount];
 
-    public Attribute FindAttributeType(AttributeType _type)
+    public Attribute FindAttributeType(BuffType _type)
     {
         for (int i = 0; i < attributesArray.Length; i++)
         {
@@ -28,12 +28,14 @@ public class BrewingSystem: MonoBehaviour
         }
         return null;
     }
-    public int GetValueOfAttribute(AttributeType _type)
+
+    public int GetValueOfAttribute(BuffType _type)
     {
         Attribute _attribute = FindAttributeType(_type);
         if (_attribute == null) return 0;
         else return _attribute.value.ModifiedValue;
     }
+
     public void OnMouseDown()
     {
         
@@ -41,9 +43,18 @@ public class BrewingSystem: MonoBehaviour
 
     public void BrewPotion()
     {
+        //Calculate the values for each buff attribute
+
+        //Pseudo: fireAttributeValue = (slot[0].item.Buffs[0].Value * slot[0].amount) + (slot[1].item.Buffs[0].Value * slot[1].amount)
+
+        //Item newPotionBlueprint = new Item(name, firevalue, watervalue, )
+
+        //ItemObject newPotionObject = new ItemObject(newPotiobBlueprint, ItemType.Potion, false, "Procedural description");
+
         AfterInv.AddItem(4, 1);
-        DataOverWrite();
+        //DataOverWrite();
         BeforeInv.Clear();
+        
         
     }
 
