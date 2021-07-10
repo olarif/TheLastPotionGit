@@ -36,18 +36,6 @@ public class DialogueManager : MonoBehaviour
         isActive = false;
     }
 
-    public void Update()
-    {
-
-
-        if (instance.currentIndex > 0)
-        {
-            if (isOpen && Input.GetKeyDown(KeyCode.E))
-            {
-                ReadNext();
-            }
-        }
-    }
 
     public static void StartConversation(Conversation convo)
     {

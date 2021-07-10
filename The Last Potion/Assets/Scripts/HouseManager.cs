@@ -4,24 +4,17 @@ using UnityEngine;
 
 public class HouseManager : MonoBehaviour
 {
-    public Conversation convo;
-
-    //Day 1
-    //Randomize wifes feelings
-
-    //
-
+    private GameObject player;
 
     void Start()
     {
-        
+        player = GameObject.FindWithTag("Player");
+
+        player.transform.position = new Vector2(8, -3);
     }
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.F))
-        {
-            DialogueManager.StartConversation(convo);
-        }
+
     }
 }
