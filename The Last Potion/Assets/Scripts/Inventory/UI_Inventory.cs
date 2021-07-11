@@ -49,7 +49,7 @@ public class UI_Inventory : MonoBehaviour
             itemSlotImage.sprite = item.GetSprite();
             RectTransform itemSlotRectTransform = Instantiate(itemSlotTemplate, itemSlotContainer).GetComponent<RectTransform>();
             itemSlotRectTransform.gameObject.SetActive(true);
-            itemSlotRectTransform.anchoredPosition = new Vector2(x * itemSlotCellSize - 370, y * itemSlotCellSize + 150);
+            itemSlotRectTransform.anchoredPosition = new Vector2(x * itemSlotCellSize - 150f, y * itemSlotCellSize);
 
             TextMeshProUGUI amountText = itemSlotRectTransform.Find("text").GetComponent<TextMeshProUGUI>();
 

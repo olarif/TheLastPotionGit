@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Wife
   m_EditorClassIdentifier: 
   speakerName: Wife
-  speakerSprite: {fileID: 21300000, guid: 59f1f61d1523c3c46a266e6b9aa9e3a0, type: 2}
+  speakerSprite: {fileID: 21300000, guid: c3ae9d7cb1073da4f96bae0b851868f4, type: 3}

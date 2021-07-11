@@ -34,5 +34,6 @@ public class TalkToWife : MonoBehaviour
         chatBubble.SetActive(false);
         inRange = false;
         inProgress = false;
+        DialogueManager.StopConversation();
     }
 }

@@ -65,9 +65,6 @@ public class DiagnoseManager : MonoBehaviour
     public void Start()
     {
         day = GameManager.instance.day;
-        elementState = GameManager.instance.elementState;
-        elementState = 2;
-
         trigger = false;
         chatBox.SetActive(false);
         InteractWindow.SetActive(false);

@@ -8,11 +8,7 @@ public class Inventory
     public static Inventory Instance { get; private set; }
     public event EventHandler OnItemListChanged;
 
-    private List<Item> itemList;
-
-    public void Awake()
-    {
-    }
+    public List<Item> itemList;
 
     public Inventory()
     {
