@@ -8,15 +8,10 @@ using TMPro;
 public class UI_Inventory : MonoBehaviour
 {
     private Inventory inventory;
+    public GameObject uiInventory;
     [SerializeField] private Transform itemSlotContainer;
     [SerializeField] private Transform itemSlotTemplate;
     [SerializeField] private Image itemSlotImage;
-    //[SerializeField] private TextMeshProUGUI amountText;
-
-    public void Awake()
-    {
-
-    }
 
     public void SetInventory(Inventory inventory)
     {
