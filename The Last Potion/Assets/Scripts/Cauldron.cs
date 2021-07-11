@@ -6,6 +6,8 @@ using UnityEngine.UI;
 
 public class Cauldron : MonoBehaviour
 {
+    public TalkToWife wife;
+
     public GameObject chatBox;
     public GameObject brewingInventory;
     private bool inRange;
@@ -18,6 +20,7 @@ public class Cauldron : MonoBehaviour
 
     private int items;
     private int itemTypes;
+    private bool potion = false;
 
     public Conversation potionSuccess;
     public Conversation missingItems;
@@ -31,6 +34,8 @@ public class Cauldron : MonoBehaviour
     {
         items = 0;
         itemTypes = 0;
+
+        potion = false;
     }
 
     void Update()
@@ -63,18 +68,26 @@ public class Cauldron : MonoBehaviour
         {
             default:
             case 1:
+                potion = false;
+                wife.SetBool(potion);
                 DialogueManager.StartConversation(missingItems);
                 break;
             case 2:
+                potion = false;
+                wife.SetBool(potion);
                 DialogueManager.StartConversation(missingItems);
                 break;
             case 3:
+                potion = false;
+                wife.SetBool(potion);
                 DialogueManager.StartConversation(missingItems);
                 break;
             case 4:
                 Player.Instance.Clear();
                 image.sprite = fullPotion;
                 DialogueManager.StartConversation(potionSuccess);
+                potion = true;
+                wife.SetBool(potion);
                 break;
         }
 
