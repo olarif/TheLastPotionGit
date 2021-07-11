@@ -108,9 +108,11 @@ public class Player : MonoBehaviour
 
         if(itemWorld != null)
         {
-            inventory.AddItem(itemWorld.GetItem());
-            itemWorld.DestroyItself();
-            
+            if (inventory.itemList.Count < 4)
+            {
+                inventory.AddItem(itemWorld.GetItem());
+                itemWorld.DestroyItself();
+            }
         }
     }
 }
