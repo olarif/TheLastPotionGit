@@ -43,3 +43,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dbc959c6e59c43a4fbe9ac880f64eeda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MenuScene: Menu
+  GameScene: Prototype1
