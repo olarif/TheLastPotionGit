@@ -10,7 +10,7 @@ public class TalkToWife : MonoBehaviour
     private Cauldron cauldron;
     private bool inRange;
     private bool inProgress = false;
-    public bool potionBool;
+    private bool potionBool;
 
     public void SetBool(bool potion)
     {
@@ -28,6 +28,7 @@ public class TalkToWife : MonoBehaviour
                 {
                     DialogueManager.StartConversation(potionTrue);
                     inProgress = true;
+                    potionBool = false;
                 }
                 else
                 {

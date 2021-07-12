@@ -14,9 +14,10 @@ public class Cauldron : MonoBehaviour
     private GameObject player;
     private Inventory inventory;
 
-    public Sprite emptyPotion;
-    public Sprite fullPotion;
-    public Image image;
+
+    public GameObject emptyPotion;
+    public GameObject fullPotion;
+    public GameObject UIpotionImage;
 
     private int items;
     private int itemTypes;
@@ -36,10 +37,23 @@ public class Cauldron : MonoBehaviour
         itemTypes = 0;
 
         potion = false;
+
+        emptyPotion.SetActive(true);
+        fullPotion.SetActive(false);
     }
 
     void Update()
     {
+        if (potion)
+        {
+            UIpotionImage.SetActive(true);
+
+        } else
+        {
+            UIpotionImage.SetActive(false);
+        }
+
+
         if (inRange)
         {
             if (Input.GetKeyDown(KeyCode.E))
@@ -84,7 +98,7 @@ public class Cauldron : MonoBehaviour
                 break;
             case 4:
                 Player.Instance.Clear();
-                image.sprite = fullPotion;
+                fullPotion.SetActive(true);
                 DialogueManager.StartConversation(potionSuccess);
                 potion = true;
                 wife.SetBool(potion);
@@ -115,7 +129,8 @@ public class Cauldron : MonoBehaviour
     {
         chatBox.SetActive(false);
         inRange = false;
-        image.sprite = emptyPotion;
+        fullPotion.SetActive(false);
+        emptyPotion.SetActive(true);
         brewingInventory.SetActive(false);
     }
 }
