@@ -16,6 +16,9 @@ public class AudioManager : MonoBehaviour
     public String MenuScene;
     public String GameScene;
 
+    // Parameter
+    private float SoundtrackParam = 0f;
+
     private void Awake()
     {
         if (Instance == null)
@@ -28,7 +31,7 @@ public class AudioManager : MonoBehaviour
             Destroy(gameObject);
         }
 
-        SwitchMusic();
+        SwitchMusicOnScene();
     }
 
     void Start()
@@ -50,17 +53,35 @@ public class AudioManager : MonoBehaviour
         ISoundtrack.start();
     }
 
-    void SwitchMusic()
+    void SwitchMusicOnScene()
     {
         if (SceneManager.GetActiveScene().name == MenuScene)
         {
-            Debug.Log("Menu");
+            //Debug.Log("Menu");
             FMODUnity.RuntimeManager.StudioSystem.setParameterByName("SceneName", 0f);
+            //SoundtrackParam = 0f;
         }
         else if (SceneManager.GetActiveScene().name == GameScene)
         {
-            Debug.Log("Outdoor");
+            //Debug.Log("Outdoor");
             FMODUnity.RuntimeManager.StudioSystem.setParameterByName("SceneName", 1f);
+            //SoundtrackParam = 1f;
         }
+    }
+
+    void SwitchMusicOnTrigger()
+    {
+
+    }
+
+    public void StartMusicFirstFloor()
+    {
+        SoundtrackParam = 2f;
+        FMODUnity.RuntimeManager.StudioSystem.setParameterByName("SceneName", SoundtrackParam);
+    }
+    public void StartMusicOutdoor()
+    {
+        SoundtrackParam = 1f;
+        FMODUnity.RuntimeManager.StudioSystem.setParameterByName("SceneName", SoundtrackParam);
     }
 }
