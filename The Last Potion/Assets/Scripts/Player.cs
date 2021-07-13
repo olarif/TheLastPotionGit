@@ -5,7 +5,6 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-
     public static Player Instance { get; private set; }
 
     public float moveSpeed = 2f, sprintSpeed = 5f;
@@ -16,13 +15,18 @@ public class Player : MonoBehaviour
 
     Vector2 movement;
 
-    private Inventory inventory;
+    public Inventory inventory;
     [SerializeField] private UI_Inventory uiInventory;
+    [SerializeField] private UI_Inventory brewingInventory;
+    [SerializeField] private UI_Inventory shelfInventory;
+    [SerializeField] private Cauldron cauldron;
+    [SerializeField] private Shelf shelf;
 
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        animator.SetFloat("lastMoveY", -1);
     }
 
     private void Awake()
@@ -31,7 +35,22 @@ public class Player : MonoBehaviour
         Instance = this;
         inventory = new Inventory();
         uiInventory.SetInventory(inventory);
+        brewingInventory.SetInventory(inventory);
+        shelfInventory.SetInventory(inventory);
+        cauldron.SetInventory(inventory);
+        shelf.SetInventory(inventory);
     }
+
+    public void Clear()
+    {
+        inventory.ClearInventory();
+        uiInventory.SetInventory(inventory);
+        brewingInventory.SetInventory(inventory);
+        shelfInventory.SetInventory(inventory);
+        cauldron.SetInventory(inventory);
+        shelf.SetInventory(inventory);
+    }
+
     public void HandleUpdate()
     {
         //Movement Axis / squash vertical axis by 2
@@ -45,10 +64,9 @@ public class Player : MonoBehaviour
         animator.SetFloat("Horizontal", movement.x);
         animator.SetFloat("Vertical", movement.y);
         animator.SetFloat("Speed", movement.magnitude);
-        animator.SetFloat("lastMoveY", -1);
 
         //Character idle in direction he is facing
-        if (Input.GetAxisRaw("Horizontal") == 1 || Input.GetAxisRaw("Horizontal") == -1 || Input.GetAxisRaw("Vertical") == 1 || Input.GetAxisRaw("Vertical") == -1)
+        if (Input.GetAxisRaw("Horizontal") == 1 || Input.GetAxisRaw("Vertical") == -1 || Input.GetAxisRaw("Horizontal") == -1 || Input.GetAxisRaw("Vertical") == 1)
         {
             animator.SetFloat("lastMoveX", Input.GetAxisRaw("Horizontal"));
             animator.SetFloat("lastMoveY", Input.GetAxisRaw("Vertical"));
@@ -90,9 +108,11 @@ public class Player : MonoBehaviour
 
         if(itemWorld != null)
         {
-            inventory.AddItem(itemWorld.GetItem());
-            itemWorld.DestroyItself();
-            
+            if (inventory.itemList.Count < 4)
+            {
+                inventory.AddItem(itemWorld.GetItem());
+                itemWorld.DestroyItself();
+            }
         }
     }
 }

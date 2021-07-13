@@ -55,9 +55,9 @@ public class Item
             case ItemType.Plant2:
                 return false;
             case ItemType.Plant3:
-                return true;
+                return false;
             case ItemType.Plant4:
-                return true;
+                return false;
         }
     }
 }

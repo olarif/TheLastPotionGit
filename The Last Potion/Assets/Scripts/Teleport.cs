@@ -13,9 +13,6 @@ public class Teleport : MonoBehaviour
 
     private int room;
 
-    private bool worldCam = true;
-    private bool bedroomCam;
-
     private void Awake()
     {
         room = 1;
@@ -48,12 +45,10 @@ public class Teleport : MonoBehaviour
         if (this.tag == "Room1")
         {
             room = 2;
-            Debug.Log("Room1");
         } 
         else if (this.tag == "Room2")
         {
             room = 3;
-            Debug.Log("Room2");
         }
         else if (this.tag == "Room3")
         {
@@ -72,7 +67,7 @@ public class Teleport : MonoBehaviour
 
     private IEnumerator TeleportPlayer()
     {
-        yield return new WaitForSeconds (.5f);
+        yield return new WaitForSeconds (.3f);
         Player.transform.position = new Vector2(Portal.transform.position.x, Portal.transform.position.y);
         SwitchPriority();
     }

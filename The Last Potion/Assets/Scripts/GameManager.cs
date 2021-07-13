@@ -8,7 +8,6 @@ public class GameManager : MonoBehaviour
 
     public static GameManager instance;
     public int day;
-    public int elementState;
 
     [SerializeField] Player playerController;
 
@@ -24,8 +23,7 @@ public class GameManager : MonoBehaviour
             DontDestroyOnLoad(this.gameObject);
         }
 
-        day = 2;
-        elementState = 1;
+        day = 1;
 
         state = GameState.FreeRoam;
     }

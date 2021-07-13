@@ -8,15 +8,10 @@ using TMPro;
 public class UI_Inventory : MonoBehaviour
 {
     private Inventory inventory;
+    public GameObject uiInventory;
     [SerializeField] private Transform itemSlotContainer;
     [SerializeField] private Transform itemSlotTemplate;
     [SerializeField] private Image itemSlotImage;
-    //[SerializeField] private TextMeshProUGUI amountText;
-
-    public void Awake()
-    {
-
-    }
 
     public void SetInventory(Inventory inventory)
     {
@@ -49,7 +44,7 @@ public class UI_Inventory : MonoBehaviour
             itemSlotImage.sprite = item.GetSprite();
             RectTransform itemSlotRectTransform = Instantiate(itemSlotTemplate, itemSlotContainer).GetComponent<RectTransform>();
             itemSlotRectTransform.gameObject.SetActive(true);
-            itemSlotRectTransform.anchoredPosition = new Vector2(x * itemSlotCellSize - 370, y * itemSlotCellSize + 150);
+            itemSlotRectTransform.anchoredPosition = new Vector2(x * itemSlotCellSize - 150f, y * itemSlotCellSize);
 
             TextMeshProUGUI amountText = itemSlotRectTransform.Find("text").GetComponent<TextMeshProUGUI>();
 
