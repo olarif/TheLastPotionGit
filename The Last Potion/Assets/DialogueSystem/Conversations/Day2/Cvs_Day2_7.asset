@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f94a03e51d4fdf540907be22a2ccb240, type: 3}
+  m_Name: Cvs_Day2_7
+  m_EditorClassIdentifier: 
+  allLines:
+  - speaker: {fileID: 11400000, guid: 9c06056877b44b04f8b1ffa5bde45c0e, type: 2}
+    dialogue: 'Hannah looks tired.
+
+      The spouts on her head spilled, grew thicker
+      than an arm. Leaves were springing up like mushrooms.'
+  - speaker: {fileID: 11400000, guid: 9c06056877b44b04f8b1ffa5bde45c0e, type: 2}
+    dialogue: "Her skin has hardened, the texture is rough as bark.\r\nHer hands
+      have become like dried gingers.\r"
+  - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
+    dialogue: "\u201COh my. It is bad. It is getting worse.\u201D"
+  - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
+    dialogue: "\u201CDear, I brew the retardant for you.\r\nAfter drinking this,
+      the growth should stop and start to shrink.\u201D\r\n"
+  - speaker: {fileID: 11400000, guid: 9c06056877b44b04f8b1ffa5bde45c0e, type: 2}
+    dialogue: Hannah blinks her eyes at you. Her mouth is open, but the voice barely
+      comes out.
+  - speaker: {fileID: 11400000, guid: 0e0f50cb6d9e3844582613b7de3fab55, type: 2}
+    dialogue: "\u201Cmm.......Arms\u2026\u2026 can\u2019t\u2026.... Moof\u2026\u2026.\u201D"
+  - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
+    dialogue: "\u201CThat\u2019s okay, let me feed you.\u201D"

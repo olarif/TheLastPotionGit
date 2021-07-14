@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f94a03e51d4fdf540907be22a2ccb240, type: 3}
+  m_Name: Cvs_Day2_4
+  m_EditorClassIdentifier: 
+  allLines:
+  - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
+    dialogue: 'Dear Master Rowan,
+
+      It''s been a while. Has Master found the
+      solution?'
+  - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
+    dialogue: Our priest has died from the spell, but the church seems reluctant
+      to send another one to our place. Instead, they provided shelter in the nearby
+      town, so all the villagers have retreated there.
+  - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
+    dialogue: However, I stay because that the curse has also infected my wife, Hannah.
+      As I said in the last letter, the petrified part can be easily fractured by
+      simply touching it. So I can't move her around.
+  - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
+    dialogue: Nevertheless, I've got a discovery. I prescribed the Growth Formula
+      Zeta for Hannah. Surprisingly, Her petrified legs had been repaired, but she
+      also mutated into a dryad painfully.
+  - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
+    dialogue: Now I'm trying to brew the Great Growth Retardant, but the Furymint
+      and Abalathian Rock Salt are hard to obtain. So I mustered up the courage to
+      ask Master for supplements in these ingredients.
+  - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
+    dialogue: "Sincerely,\r\nBran Crowfield\r"
+  - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
+    dialogue: '"Now the letter is written. Take it to the relay stable and I''m sure
+      some travelers would help me send this."'
