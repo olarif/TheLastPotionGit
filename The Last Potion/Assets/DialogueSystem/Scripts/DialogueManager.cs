@@ -31,14 +31,15 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
-    public void Start()
+    public bool Start()
     {
-        isActive = false;
+        return isActive;
     }
 
 
     public static void StartConversation(Conversation convo)
     {
+
         instance.isActive = true;
 
         instance.anim.SetBool("isOpen", true);
@@ -57,6 +58,7 @@ public class DialogueManager : MonoBehaviour
     {
         instance.anim.SetBool("isOpen", false);
         isOpen = false;
+        instance.isActive = false;
     }
 
     public void ReadNext()
@@ -65,6 +67,7 @@ public class DialogueManager : MonoBehaviour
         {
             instance.anim.SetBool("isOpen", false);
             isOpen = false;
+            instance.isActive = false;
             return;
         }
 

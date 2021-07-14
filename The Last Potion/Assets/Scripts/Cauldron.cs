@@ -53,7 +53,6 @@ public class Cauldron : MonoBehaviour
             UIpotionImage.SetActive(false);
         }
 
-
         if (inRange)
         {
             if (Input.GetKeyDown(KeyCode.E))

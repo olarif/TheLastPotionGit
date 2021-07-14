@@ -13,7 +13,7 @@ public class GameManager : MonoBehaviour
 
     public GameObject UIwindow;
 
-    GameState state;
+    public GameState state;
 
     private void Awake()
     {
@@ -30,9 +30,18 @@ public class GameManager : MonoBehaviour
 
     public void Update()
     {
+
         if (Input.GetKeyDown(KeyCode.I))
         {
             UIwindow.SetActive(!UIwindow.activeInHierarchy);
+        }
+
+        if (DialogueManager.instance.isActive)
+        {
+            state = GameState.Dialogue;
+        } else
+        {
+            state = GameState.FreeRoam;
         }
 
 

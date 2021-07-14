@@ -69,6 +69,7 @@ public class Teleport : MonoBehaviour
     {
         yield return new WaitForSeconds (.3f);
         Player.transform.position = new Vector2(Portal.transform.position.x, Portal.transform.position.y);
+        Player.GetComponent<Animator>().SetFloat("lastMoveY", -1);
         SwitchPriority();
     }
 }
