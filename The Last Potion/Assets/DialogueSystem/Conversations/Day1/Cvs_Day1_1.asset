@@ -14,34 +14,34 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   allLines:
   - speaker: {fileID: 11400000, guid: b34ce5d40d176fd4cabba44afc9f23fb, type: 2}
-    dialogue: '"All of us are leaving. Are you sure you two stay here?"'
+    dialogue: All of us are leaving. Are you sure you two want to stay here?
   - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
-    dialogue: '"Yeah, She is alive still. I can''t leave my wife like that. I''ll
-      keep searching for the right theropy to cure her."'
+    dialogue: She is still alive. I can't leave my wife like that. I'll keep searching
+      for the cure.
   - speaker: {fileID: 11400000, guid: b34ce5d40d176fd4cabba44afc9f23fb, type: 2}
-    dialogue: '"It is a curse, not a disease. It even killed our priest. What you
-      can do to fight this spell with your little alchemy?"'
+    dialogue: It is a curse, not a disease. It even killed our priest. What you can
+      do to fight it?
   - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
-    dialogue: '"I''ve got some more recipes I haven''t tried."'
+    dialogue: I've got some more recipes I haven't tried.
   - speaker: {fileID: 11400000, guid: 9c06056877b44b04f8b1ffa5bde45c0e, type: 2}
-    dialogue: '"You have tried so many time, but Tom has died, Bill has died, Susan
-      has died...... All our friends are dead. All dead. The death of Hannah is only
-      the matter of time!
-
-      "'
-  - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
-    dialogue: '"I know. However, as long as she is alive, I won''t give up. I also
-      want you and everyone to come back to this place. We''ve got so many memories
-      together here."'
+    dialogue: 'You have tried so many times, but Tom has died, Bill has died, Susan
+      has died...... '
   - speaker: {fileID: 11400000, guid: b34ce5d40d176fd4cabba44afc9f23fb, type: 2}
-    dialogue: '"Even you say so, I can tell from your voice that you are exhausted.
-      You can''t hide it under your mask!"'
+    dialogue: All our friends are dead. All dead. The death of Hannah is only a matter
+      of time!
   - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
-    dialogue: '"Listen. I can take good care of ourselves. So you, please leave and
-      keep healthy."'
+    dialogue: I know. However, as long as she is alive, I won't give up. I also want
+      you and everyone to come back to this place. We've got so many memories together
+      here.
   - speaker: {fileID: 11400000, guid: b34ce5d40d176fd4cabba44afc9f23fb, type: 2}
-    dialogue: '"(Sigh) Alright, but you, keep healthy, please."'
+    dialogue: I can tell from your voice that you are exhausted. You can't hide it
+      under your mask!
   - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
-    dialogue: '"Take care. See you!"'
+    dialogue: Listen. I can take good care of us. So I ask you to please leave and
+      stay healthy.
   - speaker: {fileID: 11400000, guid: b34ce5d40d176fd4cabba44afc9f23fb, type: 2}
-    dialogue: '"Goodbye."'
+    dialogue: (Sigh) Alright, but you too. Stay healthy, please.
+  - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
+    dialogue: Take care. See you!
+  - speaker: {fileID: 11400000, guid: b34ce5d40d176fd4cabba44afc9f23fb, type: 2}
+    dialogue: Goodbye.

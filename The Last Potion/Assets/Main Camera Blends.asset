@@ -38,8 +38,8 @@ MonoBehaviour:
   - m_From: FirstFloorCam
     m_To: BedroomCam
     m_Blend:
-      m_Style: 0
-      m_Time: 2
+      m_Style: 2
+      m_Time: 1.25
       m_CustomCurve:
         serializedVersion: 2
         m_Curve: []
@@ -49,8 +49,8 @@ MonoBehaviour:
   - m_From: BedroomCam
     m_To: FirstFloorCam
     m_Blend:
-      m_Style: 0
-      m_Time: 2
+      m_Style: 2
+      m_Time: 1.25
       m_CustomCurve:
         serializedVersion: 2
         m_Curve: []
