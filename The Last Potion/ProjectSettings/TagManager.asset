@@ -9,6 +9,8 @@ TagManager:
   - Room2
   - Room3
   - Door
+  - scene2
+  - scene1
   layers:
   - Default
   - TransparentFX

@@ -14,31 +14,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   allLines:
   - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
-    dialogue: '"My dear, your blood just can''t well circulate through your legs.'
+    dialogue: My dear, your blood can't circulate through your legs properly.
   - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
-    dialogue: But it is OK! I'll help you stretch your legs, take care of your nutrition
-      and excretion, and I'll brew some potions for you."
+    dialogue: I'll help you stretch your legs and take care of your nutrition. I'll
+      try to brew some potions for you.
   - speaker: {fileID: 11400000, guid: 0e0f50cb6d9e3844582613b7de3fab55, type: 2}
-    dialogue: '"Honey, that won''t work...... Just kill me and free yourself......"'
+    dialogue: Honey, that won't work...... Just kill me and free yourself.....
   - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
-    dialogue: '"I''ve got some other recipes I can try! My master left a lof things
-      to me. I''m sure there will be a solution.'
+    dialogue: I've got some other recipes I can try! My master left a lof things
+      to me. I'm sure there is a solution.
   - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
-    dialogue: Hannah, Please trust me. I will heal you."
+    dialogue: Hannah, Please trust me. I will heal you.
   - speaker: {fileID: 11400000, guid: 0e0f50cb6d9e3844582613b7de3fab55, type: 2}
-    dialogue: '"You will be infected, too."'
+    dialogue: You will only infect yourself trying...
   - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
-    dialogue: '"I''ll find the solution before that!"'
+    dialogue: I'll find the solution before that!
   - speaker: {fileID: 11400000, guid: 0e0f50cb6d9e3844582613b7de3fab55, type: 2}
-    dialogue: '"You will die!"'
+    dialogue: You will die!
   - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
-    dialogue: '"I don''t care, I''m not leaving without you!"'
+    dialogue: I don't care, I'm not leaving without you!
   - speaker: {fileID: 11400000, guid: 0e0f50cb6d9e3844582613b7de3fab55, type: 2}
     dialogue: ...
   - speaker: {fileID: 11400000, guid: 0e0f50cb6d9e3844582613b7de3fab55, type: 2}
-    dialogue: '"Alright, I will take whatever you give me.
-
-      I hope this time
-      your experiment would work."'
+    dialogue: Alright, I will take whatever you can give me. I hope this time your
+      experiments work.
   - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
-    dialogue: '"We have to make it works."'
+    dialogue: We have to make it work.
+  - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
+    dialogue: Let me go check what I have on the shelf.

@@ -14,34 +14,38 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   allLines:
   - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
-    dialogue: '"Ugh. Even I said so, I really have no idea what''s going on."'
+    dialogue: What a horrible situation. I really have no idea what's going on anymore.
   - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
-    dialogue: '"The curse is extremely overwhelming that the magic resistance potion
-      can''t block it outside the body. And the restoration potion can''t retrieve
-      the body state.'
+    dialogue: The curse is so overwhelming that the magic resistance potion can't
+      block it.
   - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
-    dialogue: Other enhancement potions like Spine Drop, Echo Drop, Smelling Salts, 
-      Cordial...... they don't work either. Not even slow it down. So every attempting
-      for humans and animals has failed.
+    dialogue: And the restoration potion can't retrieve take effect on the body.
+  - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
+    dialogue: 'Other enhancement potions like Spine Drop, Echo Drop, Smelling Salts, 
+      Cordial...... they don''t work either. '
+  - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
+    dialogue: They don't even slow it down. Every attempt on humans or animals has
+      failed so far.
   - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
     dialogue: Maybe I shouldn't think in the way of humans and animals..... but of
-      plants?"
+      plants?
   - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
-    dialogue: '"Yeah, there should be a couple of recipes about boosting the growth
-      for plants! That''s it! Growth Formula! '
+    dialogue: Yeah, there should be a couple of recipes about boosting the growth
+      for plants! That's it! Growth Formula!
   - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
     dialogue: Since the body will turn into dirt, and the plants can survive in the
-      dirt, that might be work!"
+      dirt, that might work!
   - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
-    dialogue: '"Are there any papers talks about effects of human body taking Growth
-      Formula...... Mmm, no. We have to take our own risks."'
+    dialogue: 'I wonder, are there any books on the effects of growth formula on
+      the human body? '
   - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
-    dialogue: '"So what''s the recipe? Mmmm....... I would not take the one with
-      quicksilver...... Aha, there is a one! Windtea Leaves, Persimmon Tannin, and
-      Perlite...... That is lucky. I''ve got Persimmon Tannin and Perlite in the
-      storage, and I know Nicky grew some Windtea in his front yard!"'
+    dialogue: Sadly I don't own one. I will have to take the risk, I have nothing
+      left to lose.
   - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
-    dialogue: '"So what''s the recipe? Mmmm....... I would not take the one with
-      quicksilver...... Aha, there is a one! Windtea Leaves, Persimmon Tannin, and
-      Perlite...... That is lucky. I''ve got Persimmon Tannin and Perlite in the
-      storage, and I know Nicky grew some Windtea in his front yard!"'
+    dialogue: 'So what''s the recipe? Mmmm....... I would not take the one with quicksilver......
+      Aha, here is one!      '
+  - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
+    dialogue: 'Windtea Leaves, Persimmon Tannin, and Perlite...... Hmm, let me check.   '
+  - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
+    dialogue: I've got Persimmon Tannin and Perlite in the storage, and I know Nicky
+      grew some Windtea in his front yard!

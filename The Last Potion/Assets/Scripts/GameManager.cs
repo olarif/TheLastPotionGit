@@ -31,7 +31,7 @@ public class GameManager : MonoBehaviour
     public void Update()
     {
 
-        if (Input.GetKeyDown(KeyCode.I))
+        if (!DialogueManager.instance.isActive && Input.GetKeyDown(KeyCode.I))
         {
             UIwindow.SetActive(!UIwindow.activeInHierarchy);
         }
@@ -51,7 +51,7 @@ public class GameManager : MonoBehaviour
         } 
         else if (state == GameState.Dialogue)
         {
-
+            playerController.StopWalking();
         }
 
         if (Input.GetKeyDown(KeyCode.Escape))

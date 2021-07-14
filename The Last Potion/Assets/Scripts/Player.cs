@@ -34,6 +34,11 @@ public class Player : MonoBehaviour
         DontDestroyOnLoad(this.gameObject);
         Instance = this;
         inventory = new Inventory();
+        InitInventory();
+    }
+
+    public void InitInventory()
+    {
         uiInventory.SetInventory(inventory);
         brewingInventory.SetInventory(inventory);
         shelfInventory.SetInventory(inventory);
@@ -76,6 +81,14 @@ public class Player : MonoBehaviour
         {
             Interact();
         }
+    }
+
+    public void StopWalking()
+    {
+        movement.x = 0;
+        movement.y = 0;
+        animator.SetFloat("Speed", 0);
+        animator.SetFloat("lastMoveY", -1);
     }
 
     void Interact()
