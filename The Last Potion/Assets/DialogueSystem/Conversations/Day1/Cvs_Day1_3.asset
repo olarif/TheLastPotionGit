@@ -33,7 +33,7 @@ MonoBehaviour:
       Now, this town only has the two of
       us left.'
   - speaker: {fileID: 11400000, guid: 0e0f50cb6d9e3844582613b7de3fab55, type: 2}
-    dialogue: Ah, it is so surrealistic. So dramatic.
+    dialogue: Ah, it is so surreal. So dramatic.
   - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
     dialogue: Kind of like a dream, isn't it?
   - speaker: {fileID: 11400000, guid: 0e0f50cb6d9e3844582613b7de3fab55, type: 2}
