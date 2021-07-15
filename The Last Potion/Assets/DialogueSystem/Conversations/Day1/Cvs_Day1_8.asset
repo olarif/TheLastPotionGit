@@ -18,18 +18,23 @@ MonoBehaviour:
   - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
     dialogue: The Growth Formula.
   - speaker: {fileID: 11400000, guid: 0e0f50cb6d9e3844582613b7de3fab55, type: 2}
-    dialogue: The Growth Formula?
+    dialogue: The Growth Formula? Do you mean the one for plants to grow faster?
   - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
-    dialogue: I can't restore your body state. So I believe we have to find  another
-      way around.
+    dialogue: "Yes. You know, people who got cursed can\u2019t get body restoration,
+      can\u2019t get physical immunity by taking potions."
+  - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
+    dialogue: "All of them turn into dirt. Normal therapy for the human body can\u2019t
+      confront this overwhelming curse."
+  - speaker: {fileID: 11400000, guid: 0e0f50cb6d9e3844582613b7de3fab55, type: 2}
+    dialogue: I assume that maybe something that can survive well in the dirt might
+      work here, which is the plants.
   - speaker: {fileID: 11400000, guid: 0e0f50cb6d9e3844582613b7de3fab55, type: 2}
     dialogue: So this growth formula is your answer to this then?
   - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
-    dialogue: I think using something that would help plants against the earth might
-      work here.
+    dialogue: "I\u2019m not sure either. However, I think we have to find the other
+      way around."
   - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
-    dialogue: There are no ingredients that could harm you in this potion.
+    dialogue: There are no ingredients that would harm the body in this potion, however.
+      But it is fine if you don't want to take it.
   - speaker: {fileID: 11400000, guid: 0e0f50cb6d9e3844582613b7de3fab55, type: 2}
-    dialogue: ...
-  - speaker: {fileID: 11400000, guid: 0e0f50cb6d9e3844582613b7de3fab55, type: 2}
-    dialogue: Alright, I'll take it because I believe in you.
+    dialogue: It is okay, Bran. I'll take it because I believe in you.
