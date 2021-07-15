@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   allLines:
   - speaker: {fileID: 11400000, guid: 9c06056877b44b04f8b1ffa5bde45c0e, type: 2}
-    dialogue: '"A package is lying in the stable."'
+    dialogue: A package is lying in the stable.

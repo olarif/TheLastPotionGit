@@ -18,21 +18,22 @@ MonoBehaviour:
       but also accelerate it.
   - speaker: {fileID: 11400000, guid: 9c06056877b44b04f8b1ffa5bde45c0e, type: 2}
     dialogue: "Her head became as thick as a tree trunk.\r Leaves grew even more
-      prosperous.\r\nHer skin has turned to deep brown, the texture is even rougher.\r\nThe
-      threads around her fingers grew wild, creeping under the bed.\r"
+      prosperous.\r"
+  - speaker: {fileID: 11400000, guid: 9c06056877b44b04f8b1ffa5bde45c0e, type: 2}
+    dialogue: "Her skin has turned to deep brown, the texture is even rougher.\r"
+  - speaker: {fileID: 11400000, guid: 9c06056877b44b04f8b1ffa5bde45c0e, type: 2}
+    dialogue: "The threads around her fingers grew wild, creeping under the bed.\r"
   - speaker: {fileID: 11400000, guid: 9c06056877b44b04f8b1ffa5bde45c0e, type: 2}
     dialogue: She is not becoming a dryad, but a tree, literally.
   - speaker: {fileID: 11400000, guid: 9c06056877b44b04f8b1ffa5bde45c0e, type: 2}
-    dialogue: "She can not talk anymore.\r\nAt this point, her voice has been taken.\r\nI
-      don't even know if she can hear me still.\r"
+    dialogue: "At this point, her voice has been taken.\r She can not talk anymore.\r"
   - speaker: {fileID: 11400000, guid: 9c06056877b44b04f8b1ffa5bde45c0e, type: 2}
-    dialogue: 'Not keeping petrifying and weathering is good, but turning into a
-      tree doesn''t get any better.
-
-      Can she turn back? I honestly don''t
-      know.
-
-'
+    dialogue: "I don't even know if she can hear me still.\r"
+  - speaker: {fileID: 11400000, guid: 9c06056877b44b04f8b1ffa5bde45c0e, type: 2}
+    dialogue: Not keeping petrifying and weathering is good, but turning into a tree
+      doesn't get any better.
+  - speaker: {fileID: 11400000, guid: 9c06056877b44b04f8b1ffa5bde45c0e, type: 2}
+    dialogue: Can she turn back? I honestly don't know.
   - speaker: {fileID: 11400000, guid: 9c06056877b44b04f8b1ffa5bde45c0e, type: 2}
     dialogue: The strong retardant is my last hope. I hope I can get the reply from
       Master Rowan today.
