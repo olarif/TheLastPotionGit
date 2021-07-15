@@ -6,18 +6,19 @@ using UnityEngine.UI;
 
 public class Cauldron : MonoBehaviour
 {
-    public TalkToWife wife;
+    public GameManager manager;
 
     public GameObject chatBox;
     public GameObject brewingInventory;
-    private bool inRange;
+    public GameObject UIInventory;
     private GameObject player;
     private Inventory inventory;
+    private bool inRange;
+
 
 
     public GameObject emptyPotion;
     public GameObject fullPotion;
-    public GameObject UIpotionImage;
 
     private int items;
     private int itemTypes;
@@ -44,19 +45,11 @@ public class Cauldron : MonoBehaviour
 
     void Update()
     {
-        if (potion)
-        {
-            UIpotionImage.SetActive(true);
-
-        } else
-        {
-            UIpotionImage.SetActive(false);
-        }
-
         if (inRange)
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
+                UIInventory.SetActive(true);
                 brewingInventory.SetActive(true);
             }
         }
@@ -82,17 +75,17 @@ public class Cauldron : MonoBehaviour
             default:
             case 1:
                 potion = false;
-                wife.SetBool(potion);
+                manager.SetBool(potion);
                 DialogueManager.StartConversation(missingItems);
                 break;
             case 2:
                 potion = false;
-                wife.SetBool(potion);
+                manager.SetBool(potion);
                 DialogueManager.StartConversation(missingItems);
                 break;
             case 3:
                 potion = false;
-                wife.SetBool(potion);
+                manager.SetBool(potion);
                 DialogueManager.StartConversation(missingItems);
                 break;
             case 4:
@@ -100,7 +93,7 @@ public class Cauldron : MonoBehaviour
                 fullPotion.SetActive(true);
                 DialogueManager.StartConversation(potionSuccess);
                 potion = true;
-                wife.SetBool(potion);
+                manager.SetBool(potion);
                 break;
         }
 
@@ -130,6 +123,7 @@ public class Cauldron : MonoBehaviour
         inRange = false;
         fullPotion.SetActive(false);
         emptyPotion.SetActive(true);
+        UIInventory.SetActive(false);
         brewingInventory.SetActive(false);
     }
 }

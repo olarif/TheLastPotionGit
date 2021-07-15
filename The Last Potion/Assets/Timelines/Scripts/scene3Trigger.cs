@@ -1,10 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Timeline;
 using UnityEngine.Playables;
 
-public class scene1Trigger : MonoBehaviour
+public class scene3Trigger : MonoBehaviour
 {
     public PlayableDirector scene1;
 
@@ -13,14 +12,13 @@ public class scene1Trigger : MonoBehaviour
 
     public void Update()
     {
-        if (!hasTriggered && inRange && Input.GetKeyDown(KeyCode.E))
+        if (!hasTriggered && inRange && GameManager.instance.potionBool)
         {
             scene1.Play();
             inRange = false;
             hasTriggered = true;
         }
     }
-
 
     private void OnTriggerEnter2D(Collider2D collision)
     {

@@ -14,16 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   allLines:
   - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
-    dialogue: '"Should I really do this?"'
+    dialogue: Should I really be doing this?
   - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
-    dialogue: '"Even though I''ve got this far, and there is no other way out, '
+    dialogue: I've come this far, and there is no other way out. It is a risk I will
+      have to take.
   - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
-    dialogue: should I really do this? Let her take the risk?"
+    dialogue: But what if she dies right away?
   - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
-    dialogue: '"What if she dies right away?"'
+    dialogue: No, I shouldn't think of such things.
   - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
-    dialogue: '"No, I shouldn''t think in that way."'
-  - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
-    dialogue: '"It can''t be."'
-  - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
-    dialogue: '"It can''t be."'
+    dialogue: It can't be.

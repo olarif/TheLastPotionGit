@@ -4,15 +4,6 @@ using UnityEngine;
 
 public class Day1Manager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public Conversation convo;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

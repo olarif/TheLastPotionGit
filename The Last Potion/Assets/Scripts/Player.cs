@@ -31,7 +31,7 @@ public class Player : MonoBehaviour
 
     private void Awake()
     {
-        DontDestroyOnLoad(this.gameObject);
+        //DontDestroyOnLoad(this.gameObject);
         Instance = this;
         inventory = new Inventory();
         InitInventory();

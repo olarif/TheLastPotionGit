@@ -14,15 +14,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   allLines:
   - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
-    dialogue: '"Mmm...... I can''t use any herbicide or weedkiller. If Hannah has
-      really turned into a plant, those liquids will kill her, too."'
+    dialogue: I can't use any herbicide or weedkiller. If Hannah has really turned
+      into a plant, those liquids would kill her.
   - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
-    dialogue: "\"Mmm......there is two Formula to brew retardant: a weak one and
-      a strong one\u2026\u2026 they stop the growth of branches and leaves to mature
-      the flowers and fruits? I hope that would work.....\""
+    dialogue: 'There are two formulas to brew aretardant potion: a weak one and a
+      strong one... '
   - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
-    dialogue: '"And the ingredients for the strong retardant are hard to get. Except
-      for Cow Flower, Furymint and Abalathian Rock Salt are both precious ingredients
-      that people can only obtain in the Cloud Sea."'
+    dialogue: They stop the growth of branches and leaves to mature the flowers and
+      fruits? This might work.....
   - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
-    dialogue: '"Maybe I should write a letter to Master Rowan, asking for help."'
+    dialogue: The ingredients for the strong potion are hard to get. Cow flower is
+      easy to come by.
+  - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
+    dialogue: Furymint and Abalathian Rock Salt are both precious ingredients that
+      people can only be obtained in the Cloud Sea.
+  - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
+    dialogue: Maybe I should write a letter to Master Rowan and ask for some help.

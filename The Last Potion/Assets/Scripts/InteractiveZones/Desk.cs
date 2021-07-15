@@ -1,33 +1,34 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Timeline;
 using UnityEngine.Playables;
 
-public class scene1Trigger : MonoBehaviour
+public class Desk : MonoBehaviour
 {
-    public PlayableDirector scene1;
-
-    private bool hasTriggered = false;
+    public PlayableDirector deskScene;
+    public GameObject chatBox;
     private bool inRange;
+    private bool hasTriggered = false;
 
     public void Update()
     {
-        if (!hasTriggered && inRange && Input.GetKeyDown(KeyCode.E))
+        if (inRange && Input.GetKeyDown(KeyCode.E))
         {
-            scene1.Play();
-            inRange = false;
+            chatBox.SetActive(false);
+            deskScene.Play();
             hasTriggered = true;
         }
     }
 
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
         inRange = true;
+        chatBox.SetActive(true);
     }
+
     private void OnTriggerExit2D(Collider2D collision)
     {
         inRange = false;
+        chatBox.SetActive(false);
     }
 }

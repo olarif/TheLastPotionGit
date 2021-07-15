@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
 
     public static GameManager instance;
     public int day;
+    public bool potionBool;
 
     [SerializeField] Player playerController;
 
@@ -20,7 +21,7 @@ public class GameManager : MonoBehaviour
         if(instance == null)
         {
             instance = this;
-            DontDestroyOnLoad(this.gameObject);
+            //DontDestroyOnLoad(this.gameObject);
         }
 
         day = 1;
@@ -58,5 +59,10 @@ public class GameManager : MonoBehaviour
         {
             Application.Quit();
         }
+    }
+
+    public void SetBool(bool potion)
+    {
+        this.potionBool = potion;
     }
 }

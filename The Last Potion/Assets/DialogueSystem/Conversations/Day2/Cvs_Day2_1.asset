@@ -14,21 +14,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   allLines:
   - speaker: {fileID: 11400000, guid: 9c06056877b44b04f8b1ffa5bde45c0e, type: 2}
-    dialogue: Last night, Hannah was in untold suffering.
+    dialogue: Last night, Hannah was in unimaginable suffering.
   - speaker: {fileID: 11400000, guid: 9c06056877b44b04f8b1ffa5bde45c0e, type: 2}
-    dialogue: "Spouts grew on her head.\r\nSome threads were also growing around
-      the finger points and winding like roots.\r\nEven a layer of xylem grew on
-      top of her skin. \r"
+    dialogue: Spouts grew from her head and roots were winding around her fingers.
   - speaker: {fileID: 11400000, guid: 9c06056877b44b04f8b1ffa5bde45c0e, type: 2}
-    dialogue: "Bran tried to pull the sprouts off or cut the roots off, but that
-      hurt Hannah even more.\r\nThe stems, the roots, the leaves\u2026.. All of them
-      seem to become part of her body.\r\nShe is turning into a dryad, which is highly
-      unexpected.\r\n"
+    dialogue: "Bran tried to pull the sprouts or cut the roots off, but that hurt
+      Hannah even more.\r"
   - speaker: {fileID: 11400000, guid: 9c06056877b44b04f8b1ffa5bde45c0e, type: 2}
-    dialogue: "However, even though the transformation hurts her a lot, her body
-      stops decaying now.\r\nEven the decayed legs have grown back\u2026... in a
-      root form.\r\nHer pulse was passing throughout her body. The vibration was
-      pumping.\r\n"
+    dialogue: "The stems, the roots, the leaves\u2026.. All of them seem to become
+      part of her body. She is turning into a dryad."
   - speaker: {fileID: 11400000, guid: 9c06056877b44b04f8b1ffa5bde45c0e, type: 2}
-    dialogue: "When the sunrise, the transformation seems to slow down.\r\nHer breath
-      is not as short as it was last night.\r"
+    dialogue: 'However, even though the transformation has hurt her a lot, her body
+      has stopped decaying for now.
+
+'
+  - speaker: {fileID: 11400000, guid: 9c06056877b44b04f8b1ffa5bde45c0e, type: 2}
+    dialogue: As the sun rises, the transformation seems to slow down. Her breath
+      is not as short as it was last night..

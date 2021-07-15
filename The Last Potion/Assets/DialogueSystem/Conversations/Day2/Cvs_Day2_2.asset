@@ -14,28 +14,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   allLines:
   - speaker: {fileID: 11400000, guid: 0e0f50cb6d9e3844582613b7de3fab55, type: 2}
-    dialogue: "\u201CHah, Hah, That was a long night.\u201D"
+    dialogue: Hahhah, that was a long night.
   - speaker: {fileID: 11400000, guid: 9c06056877b44b04f8b1ffa5bde45c0e, type: 2}
-    dialogue: "Her face pales like birch bark, but she still holds her breath.\r\nHer
-      voice is weak as the flapping butterfly.\r"
+    dialogue: Her face is as pale as a birch and her voice is weak.
   - speaker: {fileID: 11400000, guid: 0e0f50cb6d9e3844582613b7de3fab55, type: 2}
-    dialogue: "\u201CI\u2019m getting used to it. Hah, Ha\u2026\u2026 Have I conquered
-      the curse? I can feel my legs have extended.\u201D"
+    dialogue: "I\u2019m getting used to this. Hah ha\u2026\u2026 have I overcome
+      the curse? I can feel my legs have extended."
   - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
-    dialogue: "\u201CI hope so. Your legs did grow back, but they are taking root
-      in bed.\r\nI can\u2019t cut the roots off because they keep growing. They grew
-      too fast to cut. \r"
+    dialogue: I hope so. Your legs did grow back, but they are still growing roots.
+      They are growing too fast to cut.
   - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
-    dialogue: "It seems the spell has transmitted into something further.\r\nYou
-      look like a dryad.\u201D\r"
+    dialogue: It seems like the spell has turned into something far worse. You look
+      like a dryad.
   - speaker: {fileID: 11400000, guid: 0e0f50cb6d9e3844582613b7de3fab55, type: 2}
-    dialogue: "\u201CWell. Cheer on! You\u2019re succeeding this time! At least I\u2019m
-      not dying anymore. That is progress\u2026\u2026."
+    dialogue: "Well, atleast you\u2019re succeeding this time! I\u2019m not dying
+      anymore, so that is progress..."
   - speaker: {fileID: 11400000, guid: 0e0f50cb6d9e3844582613b7de3fab55, type: 2}
-    dialogue: "Ugh, the growing part is still hurting. What would I become?\u201D\r"
+    dialogue: Ugh, the growing roots are still hurting. What will I become?
   - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
-    dialogue: "\u201CI don\u2019t know. But, since your situation has become stable,
-      I\u2019ll brew you a growth retardant to see if that would stop the process.\u201D"
+    dialogue: "I don\u2019t know. But since your situation has become stable, i\u2019ll
+      make you a growth retardant potion to stop the process."
   - speaker: {fileID: 11400000, guid: 0e0f50cb6d9e3844582613b7de3fab55, type: 2}
-    dialogue: "\u201CSounds good\u2026\u2026. Ugh, quickly, it gets harder to make
-      a voice\u2026\u2026.\u201D"
+    dialogue: "Sounds good\u2026\u2026. Ugh, quickly, it's becoming harder for me
+      to speak.."
