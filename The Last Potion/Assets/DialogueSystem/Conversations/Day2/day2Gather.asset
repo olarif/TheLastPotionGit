@@ -9,8 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2021e00eff968c442bc81ff462a638d4, type: 3}
-  m_Name: NPC2
+  m_Script: {fileID: 11500000, guid: f94a03e51d4fdf540907be22a2ccb240, type: 3}
+  m_Name: day2Gather
   m_EditorClassIdentifier: 
-  speakerName: NPC2
-  speakerSprite: {fileID: 21300000, guid: 13e913168ff659942b1f02bc6ae0629f, type: 3}
+  allLines:
+  - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
+    dialogue: 'I need to gather some mistletoe for the potion.  '

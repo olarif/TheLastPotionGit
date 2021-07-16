@@ -14,24 +14,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   allLines:
   - speaker: {fileID: 11400000, guid: 9c06056877b44b04f8b1ffa5bde45c0e, type: 2}
-    dialogue: 'Hannah looks tired.
-
-'
+    dialogue: Hannah looks tired.
   - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
-    dialogue: The spouts on her head spilled, grew thicker than an arm. Leaves were
-      springing up like mushrooms.
+    dialogue: The spouts on her head have spilled and grown thicker than an arm.
+      Leavessprung up like mushrooms.
   - speaker: {fileID: 11400000, guid: 9c06056877b44b04f8b1ffa5bde45c0e, type: 2}
     dialogue: "Her skin has hardened, the texture is rough as bark.\r Her hands have
       become like dried gingers.\r"
   - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
-    dialogue: "\u201COh my. It is bad. It is getting worse.\u201D"
+    dialogue: Oh my. It is bad. It is getting worse.
   - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
-    dialogue: "\u201CDear, I brew the retardant for you.\r After drinking this, the
-      growth should stop and start to shrink.\u201D\r\n"
+    dialogue: "Dear, I made another potion for you.\r After drinking this, the growth
+      should stop and start to shrink.\n"
   - speaker: {fileID: 11400000, guid: 9c06056877b44b04f8b1ffa5bde45c0e, type: 2}
     dialogue: Hannah blinks her eyes at you. Her mouth is open, but the voice barely
       comes out.
   - speaker: {fileID: 11400000, guid: 0e0f50cb6d9e3844582613b7de3fab55, type: 2}
-    dialogue: "\u201Cmm.......Arms\u2026\u2026 can\u2019t\u2026.... Moof\u2026\u2026.\u201D"
+    dialogue: "mm.......arms\u2026\u2026 can\u2019t\u2026.... moof\u2026\u2026."
   - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
-    dialogue: "\u201CThat\u2019s okay, let me feed you.\u201D"
+    dialogue: "That\u2019s okay, let me feed you."
+  - speaker: {fileID: 11400000, guid: 9c06056877b44b04f8b1ffa5bde45c0e, type: 2}
+    dialogue: "Bran carefully drips the potion into Hannah\u2019s mouth.\r\nShe can
+      hardly swallow the drops.\r"

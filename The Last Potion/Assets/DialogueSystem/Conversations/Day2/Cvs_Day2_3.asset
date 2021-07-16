@@ -15,10 +15,10 @@ MonoBehaviour:
   allLines:
   - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
     dialogue: I can't use any herbicide or weedkiller. If Hannah has really turned
-      into a plant, those liquids would kill her.
+      into a plant they would kill her.
   - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
-    dialogue: 'There are two formulas to brew aretardant potion: a weak one and a
-      strong one... '
+    dialogue: 'There are two formulas to brew a retardant potion: a weak one and
+      a strong one... '
   - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
     dialogue: They stop the growth of branches and leaves to mature the flowers and
       fruits? This might work.....

@@ -9,9 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f94a03e51d4fdf540907be22a2ccb240, type: 3}
-  m_Name: Cvs_Day2_2-1
+  m_Script: {fileID: 11500000, guid: 2021e00eff968c442bc81ff462a638d4, type: 3}
+  m_Name: Bran
   m_EditorClassIdentifier: 
-  allLines:
-  - speaker: {fileID: 11400000, guid: 0e0f50cb6d9e3844582613b7de3fab55, type: 2}
-    dialogue: "Sounds good\u2026\u2026. Ugh, quickly, it gets harder to make a voice\u2026\u2026."
+  speakerName: Bran
+  speakerSprite: {fileID: 21300000, guid: 13e913168ff659942b1f02bc6ae0629f, type: 3}
