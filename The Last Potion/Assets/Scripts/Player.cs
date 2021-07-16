@@ -8,7 +8,6 @@ public class Player : MonoBehaviour
     public static Player Instance { get; private set; }
 
     public float moveSpeed = 2f, sprintSpeed = 5f;
-    public LayerMask interactableLayer;
 
     Rigidbody2D rb;
     Animator animator;
@@ -17,6 +16,7 @@ public class Player : MonoBehaviour
 
     public Inventory inventory;
     [SerializeField] private UI_Inventory uiInventory;
+    [SerializeField] private Brewing brewInventory;
 
     private void Start()
     {
@@ -27,20 +27,21 @@ public class Player : MonoBehaviour
 
     private void Awake()
     {
-        //DontDestroyOnLoad(this.gameObject);
         Instance = this;
-        inventory = new Inventory();
         InitInventory();
     }
 
     public void InitInventory()
     {
+        inventory = new Inventory();
+        brewInventory.SetInventory(inventory);
         uiInventory.SetInventory(inventory);
     }
 
     public void Clear()
     {
         inventory.ClearInventory();
+        brewInventory.SetInventory(inventory);
         uiInventory.SetInventory(inventory);
     }
 
@@ -64,11 +65,6 @@ public class Player : MonoBehaviour
             animator.SetFloat("lastMoveX", Input.GetAxisRaw("Horizontal"));
             animator.SetFloat("lastMoveY", Input.GetAxisRaw("Vertical"));
         }
-
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            Interact();
-        }
     }
 
     public void StopWalking()
@@ -77,15 +73,6 @@ public class Player : MonoBehaviour
         movement.y = 0;
         animator.SetFloat("Speed", 0);
         animator.SetFloat("lastMoveY", -1);
-    }
-
-    void Interact()
-    {
-        var collider = Physics2D.OverlapCircle(transform.position, 0.01f, interactableLayer);
-        if (collider != null)
-        {
-            collider.GetComponent<Interactable>()?.Interact();
-        }
     }
 
     private void FixedUpdate()
@@ -101,7 +88,6 @@ public class Player : MonoBehaviour
             rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
         }
     }
-
 
     private void OnTriggerEnter2D(Collider2D collision)
     {

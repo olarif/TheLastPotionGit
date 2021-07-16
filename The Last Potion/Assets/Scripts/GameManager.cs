@@ -2,37 +2,38 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Playables;
 
 public class GameManager : MonoBehaviour
 {
     public enum GameState {  FreeRoam, Dialogue}
 
     public static GameManager instance;
-    public int day;
     public bool potionBool;
+    public GameObject UIwindow;
+    public GameState state;
 
     [SerializeField] Player playerController;
 
-    public GameObject UIwindow;
-
-    public GameState state;
 
     private void Awake()
     {
-
         if(instance == null)
         {
             instance = this;
-            //DontDestroyOnLoad(this.gameObject);
         }
-
-        day = 1;
 
         state = GameState.FreeRoam;
     }
 
     public void Update()
     {
+
+        if (DialogueManager.instance.isActive && Input.GetKeyDown(KeyCode.Space))
+        {
+            DialogueManager.instance.ReadNext();
+        }
+
 
         if (!DialogueManager.instance.isActive && Input.GetKeyDown(KeyCode.I))
         {
@@ -61,6 +62,11 @@ public class GameManager : MonoBehaviour
         {
             Application.Quit();
         }
+    }
+
+    public void ClearPotion()
+    {
+        this.potionBool = false;
     }
 
     public void SetBool(bool potion)

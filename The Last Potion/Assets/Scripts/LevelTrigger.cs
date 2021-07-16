@@ -30,14 +30,12 @@ public class LevelTrigger : MonoBehaviour
 
             if (m_timeStayed > triggerStayTime && triggerCounterStay == 0 || m_triggerCountedStay < triggerCounterStay)
             {
-                Debug.Log("staying");
                 ActionTriggerStay.Invoke();
             }
         }
 
         if (GameManager.instance.potionBool)
         {
-            Debug.Log("potion");
             ActionTriggerPotion.Invoke();
         }
     }
