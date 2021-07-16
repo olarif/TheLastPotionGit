@@ -38,3 +38,49 @@ MonoBehaviour:
     dialogue: Kind of like a dream, isn't it?
   - speaker: {fileID: 11400000, guid: 0e0f50cb6d9e3844582613b7de3fab55, type: 2}
     dialogue: Yeah, this would be a great fantasy...... if I wasn't dying.
+  - speaker: {fileID: 11400000, guid: 9c06056877b44b04f8b1ffa5bde45c0e, type: 2}
+    dialogue: She points to her legs. She has been infected for three days now.
+  - speaker: {fileID: 11400000, guid: 9c06056877b44b04f8b1ffa5bde45c0e, type: 2}
+    dialogue: The side effect of the spell is petrifiction and weathering.
+  - speaker: {fileID: 11400000, guid: 9c06056877b44b04f8b1ffa5bde45c0e, type: 2}
+    dialogue: 'At first, it was just some minor movement inconveniences. '
+  - speaker: {fileID: 11400000, guid: 9c06056877b44b04f8b1ffa5bde45c0e, type: 2}
+    dialogue: Then the body starts to become as hard as stone.
+  - speaker: {fileID: 11400000, guid: 9c06056877b44b04f8b1ffa5bde45c0e, type: 2}
+    dialogue: In the end, the body will crack and turn into ashes, like other infected
+      villagers or the priest.
+  - speaker: {fileID: 11400000, guid: 9c06056877b44b04f8b1ffa5bde45c0e, type: 2}
+    dialogue: No one knows how the spell works. Even the church. However, it seems
+      the magic only affects the village.
+  - speaker: {fileID: 11400000, guid: 9c06056877b44b04f8b1ffa5bde45c0e, type: 2}
+    dialogue: The church provides shelter outside the village for people to move
+      away from this cursed place.
+  - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
+    dialogue: My dear, your blood can't circulate through your legs properly.
+  - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
+    dialogue: I'll help you stretch your legs and take care of your nutrition. I'll
+      try to brew some potions for you.
+  - speaker: {fileID: 11400000, guid: 0e0f50cb6d9e3844582613b7de3fab55, type: 2}
+    dialogue: Honey, that won't work...... Just kill me and free yourself.....
+  - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
+    dialogue: I've got some other recipes I can try! My master left a lof things
+      to me. I'm sure there is a solution.
+  - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
+    dialogue: Hannah, Please trust me. I will heal you.
+  - speaker: {fileID: 11400000, guid: 0e0f50cb6d9e3844582613b7de3fab55, type: 2}
+    dialogue: You will only infect yourself trying...
+  - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
+    dialogue: I'll find the solution before that!
+  - speaker: {fileID: 11400000, guid: 0e0f50cb6d9e3844582613b7de3fab55, type: 2}
+    dialogue: You will die!
+  - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
+    dialogue: I don't care, I'm not leaving without you!
+  - speaker: {fileID: 11400000, guid: 0e0f50cb6d9e3844582613b7de3fab55, type: 2}
+    dialogue: ...
+  - speaker: {fileID: 11400000, guid: 0e0f50cb6d9e3844582613b7de3fab55, type: 2}
+    dialogue: Alright, I will take whatever you can give me. I hope this time your
+      experiments work.
+  - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
+    dialogue: We have to make it work.
+  - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
+    dialogue: Let me go check what I have on the shelf.

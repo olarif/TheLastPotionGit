@@ -39,10 +39,10 @@ MonoBehaviour:
       under your mask!
   - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
     dialogue: Listen. I can take good care of us. So I ask you to please leave and
-      stay healthy.
+      save yourself.
   - speaker: {fileID: 11400000, guid: b34ce5d40d176fd4cabba44afc9f23fb, type: 2}
-    dialogue: (Sigh) Alright, but you too. Stay healthy, please.
+    dialogue: (Sigh) Alright, but you should leave too. Stay safe, please.
   - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
-    dialogue: Take care. See you!
+    dialogue: Good luck. I hope we will meet again.
   - speaker: {fileID: 11400000, guid: b34ce5d40d176fd4cabba44afc9f23fb, type: 2}
     dialogue: Goodbye.

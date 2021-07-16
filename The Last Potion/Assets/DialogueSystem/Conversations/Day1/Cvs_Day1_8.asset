@@ -34,7 +34,23 @@ MonoBehaviour:
     dialogue: "I\u2019m not sure either. However, I think we have to find the other
       way around."
   - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
-    dialogue: There are no ingredients that would harm the body in this potion, however.
-      But it is fine if you don't want to take it.
+    dialogue: There are no ingredients that would harm the body in this potion. I
+      understand if you don't want to take it.
   - speaker: {fileID: 11400000, guid: 0e0f50cb6d9e3844582613b7de3fab55, type: 2}
     dialogue: It is okay, Bran. I'll take it because I believe in you.
+  - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
+    dialogue: Hannah....
+  - speaker: {fileID: 11400000, guid: 0e0f50cb6d9e3844582613b7de3fab55, type: 2}
+    dialogue: Bran. I love you.
+  - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
+    dialogue: I love you too, Hannah.
+  - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
+    dialogue: How do you feel right now?
+  - speaker: {fileID: 11400000, guid: 0e0f50cb6d9e3844582613b7de3fab55, type: 2}
+    dialogue: I feel fine.
+  - speaker: {fileID: 11400000, guid: 0e0f50cb6d9e3844582613b7de3fab55, type: 2}
+    dialogue: Nothing is happennniiiNNNG AAAA
+  - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
+    dialogue: Hannah!!
+  - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
+    dialogue: HANNAH!!!!!!!!!!!!!!!!!!!

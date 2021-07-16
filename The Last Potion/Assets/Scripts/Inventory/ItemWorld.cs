@@ -7,7 +7,7 @@ public class ItemWorld : MonoBehaviour
 {
     private Item item;
     private SpriteRenderer spriteRenderer;
-    [SerializeField] new private Light2D light;
+    [SerializeField] private Light2D light;
 
     private void Awake()
     {

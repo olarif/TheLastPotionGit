@@ -49,3 +49,6 @@ MonoBehaviour:
   - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
     dialogue: I've got Persimmon Tannin and Perlite in the storage, and I know Nicky
       grew some Windtea in his front yard!
+  - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
+    dialogue: Time to head outside. Hopefully I can find enough to make the potion
+      strong.

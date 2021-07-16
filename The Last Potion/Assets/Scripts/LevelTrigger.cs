@@ -8,6 +8,7 @@ public class LevelTrigger : MonoBehaviour
     public UnityEvent ActionTriggerEnter;
     public UnityEvent ActionTriggerExit;
     public UnityEvent ActionTriggerStay;
+    public UnityEvent ActionTriggerPotion;
 
     public float triggerStayTime = 0f;
     private float m_timeStayed = 0f;
@@ -32,6 +33,12 @@ public class LevelTrigger : MonoBehaviour
                 Debug.Log("staying");
                 ActionTriggerStay.Invoke();
             }
+        }
+
+        if (GameManager.instance.potionBool)
+        {
+            Debug.Log("potion");
+            ActionTriggerPotion.Invoke();
         }
     }
 

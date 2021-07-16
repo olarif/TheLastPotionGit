@@ -17,9 +17,6 @@ public class Player : MonoBehaviour
 
     public Inventory inventory;
     [SerializeField] private UI_Inventory uiInventory;
-    [SerializeField] private UI_Inventory brewingInventory;
-    [SerializeField] private UI_Inventory shelfInventory;
-    [SerializeField] private Cauldron cauldron;
 
     private void Start()
     {
@@ -39,16 +36,12 @@ public class Player : MonoBehaviour
     public void InitInventory()
     {
         uiInventory.SetInventory(inventory);
-        brewingInventory.SetInventory(inventory);
-        cauldron.SetInventory(inventory);
     }
 
     public void Clear()
     {
         inventory.ClearInventory();
         uiInventory.SetInventory(inventory);
-        brewingInventory.SetInventory(inventory);
-        cauldron.SetInventory(inventory);
     }
 
     public void HandleUpdate()

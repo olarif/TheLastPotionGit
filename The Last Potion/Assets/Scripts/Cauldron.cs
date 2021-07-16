@@ -15,8 +15,6 @@ public class Cauldron : MonoBehaviour
     private Inventory inventory;
     private bool inRange;
 
-
-
     public GameObject emptyPotion;
     public GameObject fullPotion;
 
