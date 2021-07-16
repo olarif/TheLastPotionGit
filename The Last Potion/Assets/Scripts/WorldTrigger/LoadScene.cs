@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class SwitchScene1 : MonoBehaviour
+public class LoadScene : MonoBehaviour
 {
-    private void OnEnable()
+
+    public void SwitchScene(int scene)
     {
-        SceneManager.LoadScene("Scene2");
+        SceneManager.LoadScene(scene);
     }
+
 }
