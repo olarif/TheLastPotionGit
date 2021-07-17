@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Audio_FirstFloor : MonoBehaviour
+public class Audio_Indoor : MonoBehaviour
 {
     AudioManager ManagerRef;
 
@@ -20,12 +20,13 @@ public class Audio_FirstFloor : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        ManagerRef.StartMusicFirstFloor();
+        ManagerRef.StartMusicIndoor();
+        ManagerRef.StartSFXIndoor();
+    }
 
-        /*Debug.Log("Test_Outer_Collision");
-        if (collision.CompareTag("Player"))
-        {
-            Debug.Log("Test_Inner_Collision");
-        }*/
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        ManagerRef.StopSFXIndoor();
+        Debug.Log("ExitTrigger2D");
     }
 }
