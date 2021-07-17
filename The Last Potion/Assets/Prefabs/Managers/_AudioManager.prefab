@@ -57,9 +57,10 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 3.9770622, y: 7.603181}
-      - {x: -2.4280472, y: 7.478066}
-      - {x: -4.5497055, y: 6.095307}
+    - - {x: 6.5880394, y: 14.999586}
+      - {x: 4.33572, y: 18.147818}
+      - {x: -4.006157, y: 18.16617}
+      - {x: -6.3908997, y: 15.16483}
       - {x: -6.175865, y: 3.896412}
       - {x: -5.5119123, y: -2.2860901}
       - {x: -0.77742904, y: -5.771431}
@@ -195,6 +196,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1392172789600530710}
   - component: {fileID: 1486780011639794971}
+  - component: {fileID: 8103174056033177954}
   m_Layer: 0
   m_Name: _AudioManager
   m_TagString: Untagged
@@ -230,7 +232,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MenuScene: Menu
-  GameScene: Prototype1
+  GameScene: Scene1
+--- !u!114 &8103174056033177954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3738317968831655731}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fbb44ab6a89f5e4d8bdadc00b5bceb8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7513746114099195395
 GameObject:
   m_ObjectHideFlags: 0
