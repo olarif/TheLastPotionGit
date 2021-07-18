@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Neighbor
   m_EditorClassIdentifier: 
   speakerName: Neighbor
-  speakerSprite: {fileID: 21300000, guid: 13e913168ff659942b1f02bc6ae0629f, type: 3}
+  speakerSprite: {fileID: 21300000, guid: 32c000799037a284db68b2ef90f2d8c6, type: 3}
