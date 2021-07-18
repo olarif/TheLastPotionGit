@@ -21,7 +21,7 @@ MonoBehaviour:
       a strong one... '
   - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
     dialogue: They stop the growth of branches and leaves to mature the flowers and
-      fruits? This might work.....
+      fruits? This might work....
   - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
     dialogue: The ingredients for the strong potion are hard to get. Cow flower is
       easy to come by.

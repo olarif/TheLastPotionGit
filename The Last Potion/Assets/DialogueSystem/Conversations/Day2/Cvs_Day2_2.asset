@@ -14,12 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   allLines:
   - speaker: {fileID: 11400000, guid: 0e0f50cb6d9e3844582613b7de3fab55, type: 2}
-    dialogue: Hahhah, that was a long night.
+    dialogue: Wow, that was a long night.
   - speaker: {fileID: 11400000, guid: 9c06056877b44b04f8b1ffa5bde45c0e, type: 2}
     dialogue: Her face is as pale as a birch and her voice is weak.
   - speaker: {fileID: 11400000, guid: 0e0f50cb6d9e3844582613b7de3fab55, type: 2}
-    dialogue: "I\u2019m getting used to this. Hah ha\u2026\u2026 have I overcome
-      the curse? I can feel my legs have extended."
+    dialogue: "I\u2019m getting used to this. Hah ha..... have I overcome the curse?
+      I can feel my legs have extended."
   - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
     dialogue: I hope so. Your legs did grow back, but they are still growing roots.
       They are growing too fast to cut.
@@ -35,5 +35,4 @@ MonoBehaviour:
     dialogue: "I don\u2019t know. But since your situation has become stable, i\u2019ll
       make you a growth retardant potion to stop the process."
   - speaker: {fileID: 11400000, guid: 0e0f50cb6d9e3844582613b7de3fab55, type: 2}
-    dialogue: "Sounds good\u2026\u2026. Ugh, quickly, it's becoming harder for me
-      to speak.."
+    dialogue: Sounds good.... Ugh, quickly, it's becoming harder for me to speak..

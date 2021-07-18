@@ -30,7 +30,7 @@ MonoBehaviour:
     dialogue: Hannah blinks her eyes at you. Her mouth is open, but the voice barely
       comes out.
   - speaker: {fileID: 11400000, guid: 0e0f50cb6d9e3844582613b7de3fab55, type: 2}
-    dialogue: "mm.......arms\u2026\u2026 can\u2019t\u2026.... moof\u2026\u2026."
+    dialogue: "mm......arms...... can\u2019t... moof....."
   - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
     dialogue: "That\u2019s okay, let me feed you."
   - speaker: {fileID: 11400000, guid: 9c06056877b44b04f8b1ffa5bde45c0e, type: 2}

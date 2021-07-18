@@ -18,11 +18,11 @@ MonoBehaviour:
   - speaker: {fileID: 11400000, guid: 9c06056877b44b04f8b1ffa5bde45c0e, type: 2}
     dialogue: Spouts grew from her head and roots were winding around her fingers.
   - speaker: {fileID: 11400000, guid: 9c06056877b44b04f8b1ffa5bde45c0e, type: 2}
-    dialogue: "Bran tried to pull the sprouts or cut the roots off, but that hurt
-      Hannah even more.\r"
+    dialogue: Bran tried to pull the sproutsn or cut the roots off, but that hurt
+      Hannah even more..
   - speaker: {fileID: 11400000, guid: 9c06056877b44b04f8b1ffa5bde45c0e, type: 2}
-    dialogue: "The stems, the roots, the leaves\u2026.. All of them seem to become
-      part of her body. She is turning into a dryad."
+    dialogue: The stems, the roots, the leaves... All of them seem to become part
+      of her body. She is turning into a dryad.
   - speaker: {fileID: 11400000, guid: 9c06056877b44b04f8b1ffa5bde45c0e, type: 2}
     dialogue: 'However, even though the transformation has hurt her a lot, her body
       has stopped decaying for now.
@@ -30,4 +30,4 @@ MonoBehaviour:
 '
   - speaker: {fileID: 11400000, guid: 9c06056877b44b04f8b1ffa5bde45c0e, type: 2}
     dialogue: As the sun rises, the transformation seems to slow down. Her breath
-      is not as short as it was last night..
+      is not as short as it was last night...
