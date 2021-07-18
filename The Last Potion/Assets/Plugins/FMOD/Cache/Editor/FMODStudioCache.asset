@@ -43,6 +43,29 @@ MonoBehaviour:
     data1: 2234206392
     data2: 555093320
   Exists: 0
+--- !u!114 &-8097888214070337505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/Music
+  m_EditorClassIdentifier: 
+  Path: event:/Music/Music
+  guid: c7396208f2b5b24b972f77c4c23fb64d
+  Banks:
+  - {fileID: -3385923368023185295}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 68702
 --- !u!114 &-7567561758594639475
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -58,7 +81,7 @@ MonoBehaviour:
   Path: FMOD/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637620922954029105
+  lastModified: 637622246373471573
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -160,7 +183,7 @@ MonoBehaviour:
   Path: FMOD/Build/Desktop/Music.bank
   Name: Music
   StudioPath: bank:/Music
-  lastModified: 637620922954318340
+  lastModified: 637622246373721803
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -229,15 +252,14 @@ MonoBehaviour:
   EditorEvents:
   - {fileID: -9063409214012100070}
   - {fileID: 6793869262953179702}
-  - {fileID: -1751824571137460728}
-  - {fileID: 2574999085160315711}
-  EditorParameters:
-  - {fileID: -5511927839253730342}
+  - {fileID: 6801790517444048175}
+  - {fileID: -8097888214070337505}
+  EditorParameters: []
   MasterBanks:
   - {fileID: -7567561758594639475}
   StringsBanks:
   - {fileID: 357629081386481023}
-  stringsBankWriteTime: 637620922954088954
+  stringsBankWriteTime: 637622246373511609
   cacheVersion: 6
 --- !u!114 &357629081386481023
 MonoBehaviour:
@@ -254,11 +276,11 @@ MonoBehaviour:
   Path: FMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637620922954088954
+  lastModified: 637622246373511609
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 1138
+    Value: 1002
   Exists: 1
 --- !u!114 &931712184268012557
 MonoBehaviour:
@@ -409,6 +431,29 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 150000
+--- !u!114 &6801790517444048175
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Effects/Cauldron
+  m_EditorClassIdentifier: 
+  Path: event:/Effects/Cauldron
+  guid: 90119f58a6ecb64790e5750e5ef722e4
+  Banks:
+  - {fileID: -7567561758594639475}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 49714
 --- !u!114 &8366156177715643407
 MonoBehaviour:
   m_ObjectHideFlags: 0
