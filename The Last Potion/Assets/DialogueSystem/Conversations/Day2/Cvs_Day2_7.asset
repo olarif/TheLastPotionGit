@@ -17,7 +17,7 @@ MonoBehaviour:
     dialogue: Hannah looks tired.
   - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
     dialogue: The spouts on her head have spilled and grown thicker than an arm.
-      Leavessprung up like mushrooms.
+      Leaves sprung up like mushrooms.
   - speaker: {fileID: 11400000, guid: 9c06056877b44b04f8b1ffa5bde45c0e, type: 2}
     dialogue: "Her skin has hardened, the texture is rough as bark.\r Her hands have
       become like dried gingers.\r"

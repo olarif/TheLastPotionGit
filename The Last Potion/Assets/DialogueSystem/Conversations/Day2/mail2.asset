@@ -10,12 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f94a03e51d4fdf540907be22a2ccb240, type: 3}
-  m_Name: Cvs_Day1_9
+  m_Name: mail2
   m_EditorClassIdentifier: 
   allLines:
   - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
-    dialogue: Hannah....
-  - speaker: {fileID: 11400000, guid: 0e0f50cb6d9e3844582613b7de3fab55, type: 2}
-    dialogue: Bran. I love you.
+    dialogue: 'I''ll leave the envelope here. Hopefully the traveller will come by
+      soon. '
   - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
-    dialogue: I love you too, Hannah.
+    dialogue: Now I still need to gather some rue to brew the next potion.

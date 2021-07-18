@@ -15,12 +15,9 @@ MonoBehaviour:
   allLines:
   - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
     dialogue: Please don't..... please.....
-  - speaker: {fileID: 11400000, guid: 9c06056877b44b04f8b1ffa5bde45c0e, type: 2}
-    dialogue: "The miracle doesn't happen.\r\nShe did not even get controlled. \r\nShe
-      grew even more prominent.\r"
   - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
-    dialogue: No....way....
+    dialogue: No....this can't be happening....
   - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
-    dialogue: No, no, nooo, NOOOOOOOOOOO!!!!!
+    dialogue: No, no, NOOOOOOOOOOO!!!!!
   - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
     dialogue: Hannah!!! NOOOOO!!!

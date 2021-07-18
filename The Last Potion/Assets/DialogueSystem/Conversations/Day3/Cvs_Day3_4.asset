@@ -21,25 +21,30 @@ MonoBehaviour:
   - speaker: {fileID: 11400000, guid: 9c06056877b44b04f8b1ffa5bde45c0e, type: 2}
     dialogue: 'However, I still feel pessimistic about the current situation. '
   - speaker: {fileID: 11400000, guid: 9c06056877b44b04f8b1ffa5bde45c0e, type: 2}
-    dialogue: Even the great Growth Retardant might not work as you wish.
+    dialogue: Even the great growth retardant might not work as you wish.
   - speaker: {fileID: 11400000, guid: 9c06056877b44b04f8b1ffa5bde45c0e, type: 2}
     dialogue: To our current knowledge, the curse thou described in the last mail
       is unseen; the mutation thou depicted is unheard.
   - speaker: {fileID: 11400000, guid: 9c06056877b44b04f8b1ffa5bde45c0e, type: 2}
     dialogue: 'I''ve examined the branches thou attached with, and it doesn''t look
-      like any known dryads would have. '
+      like any dryads would have. '
   - speaker: {fileID: 11400000, guid: 9c06056877b44b04f8b1ffa5bde45c0e, type: 2}
     dialogue: 'I can''t give thee an absolute and affirmative answer. Nevertheless,
       I can give thou my early assumption:'
   - speaker: {fileID: 11400000, guid: 9c06056877b44b04f8b1ffa5bde45c0e, type: 2}
-    dialogue: The land thou stand is thirsty for fresh, nurtured soil to summon something
-      great.
+    dialogue: The land thou stand on is thirsty for fresh, nurtured soil to summon
+      something great.
   - speaker: {fileID: 11400000, guid: 9c06056877b44b04f8b1ffa5bde45c0e, type: 2}
-    dialogue: And thy wife has been chosen to be a medium for summoning instead with
-      unknown reason.
+    dialogue: And thy wife has been chosen to be a medium for the summoning.
   - speaker: {fileID: 11400000, guid: 9c06056877b44b04f8b1ffa5bde45c0e, type: 2}
-    dialogue: "Therefore, since we don\u2019t know what is the land\u2019s intention,
-      thee shall retreat as soon as possible. "
+    dialogue: "Therefore, since we don\u2019t know what the land\u2019s intention
+      is, thee shall retreat as soon as possible. "
   - speaker: {fileID: 11400000, guid: 9c06056877b44b04f8b1ffa5bde45c0e, type: 2}
-    dialogue: "Keep healthy, and good luck. I would like to meet you again.\r\r\nBest
+    dialogue: "Keep healthy, and good luck. I would like to meet you again soon.\r\r\nBest
       Regards,\r\nRowan\r\n"
+  - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
+    dialogue: 'This is the point of no return. '
+  - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
+    dialogue: I need to make this one last potion and hope for a miracle.
+  - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
+    dialogue: I will need to find some rue in the town.

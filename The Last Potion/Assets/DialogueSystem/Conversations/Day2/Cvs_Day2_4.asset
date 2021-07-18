@@ -39,5 +39,5 @@ MonoBehaviour:
   - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
     dialogue: "Sincerely,\r\nBran Crowfield\r"
   - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
-    dialogue: 'My crow will deliver this to master Rowan, he knows where to find
-      him. '
+    dialogue: 'I have to bring this mail to the old stable outside. There is a traveller
+      that frequently comes by there. '

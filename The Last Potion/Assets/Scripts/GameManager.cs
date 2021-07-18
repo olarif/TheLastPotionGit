@@ -64,6 +64,21 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public void Teleport(float x, float y, float z)
+    {
+        
+    }
+
+    public void DisableMovement()
+    {
+        state = GameState.Dialogue;
+    }
+
+    public void EnableMovement()
+    {
+        state = GameState.FreeRoam;
+    }
+
     public void ClearPotion()
     {
         this.potionBool = false;

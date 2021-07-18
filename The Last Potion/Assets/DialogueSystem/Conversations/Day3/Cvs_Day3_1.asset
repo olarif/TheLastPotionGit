@@ -14,26 +14,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   allLines:
   - speaker: {fileID: 11400000, guid: 9c06056877b44b04f8b1ffa5bde45c0e, type: 2}
-    dialogue: Apparently, The weak retardant not only didn't slow the transformation
-      but also accelerate it.
+    dialogue: Apparently, the potion not only didn't slow the transformation, but
+      accelerated it.
   - speaker: {fileID: 11400000, guid: 9c06056877b44b04f8b1ffa5bde45c0e, type: 2}
-    dialogue: "Her head became as thick as a tree trunk.\r Leaves grew even more
-      prosperous.\r"
+    dialogue: "Her head has become as thick as a tree trunk.\r Even more leaves are
+      growing."
   - speaker: {fileID: 11400000, guid: 9c06056877b44b04f8b1ffa5bde45c0e, type: 2}
-    dialogue: "Her skin has turned to deep brown, the texture is even rougher.\r"
+    dialogue: Her skin has turned to deep brown with a rough texture.
   - speaker: {fileID: 11400000, guid: 9c06056877b44b04f8b1ffa5bde45c0e, type: 2}
-    dialogue: "The threads around her fingers grew wild, creeping under the bed.\r"
+    dialogue: "The roots around her fingers have grew wild, even creeping under the
+      bed.\r"
   - speaker: {fileID: 11400000, guid: 9c06056877b44b04f8b1ffa5bde45c0e, type: 2}
     dialogue: She is not becoming a dryad, but a tree, literally.
   - speaker: {fileID: 11400000, guid: 9c06056877b44b04f8b1ffa5bde45c0e, type: 2}
-    dialogue: "At this point, her voice has been taken.\r She can not talk anymore.\r"
+    dialogue: "At this point, her voice has been taken.\r She cannot talk anymore.\r"
   - speaker: {fileID: 11400000, guid: 9c06056877b44b04f8b1ffa5bde45c0e, type: 2}
-    dialogue: "I don't even know if she can hear me still.\r"
+    dialogue: "I don't even know if she can hear me anymore.\r"
   - speaker: {fileID: 11400000, guid: 9c06056877b44b04f8b1ffa5bde45c0e, type: 2}
-    dialogue: Not keeping petrifying and weathering is good, but turning into a tree
-      doesn't get any better.
+    dialogue: Not being petrified by the curse is good, but turning into a tree inst't
+      a lot better.
   - speaker: {fileID: 11400000, guid: 9c06056877b44b04f8b1ffa5bde45c0e, type: 2}
     dialogue: Can she turn back? I honestly don't know.
   - speaker: {fileID: 11400000, guid: 9c06056877b44b04f8b1ffa5bde45c0e, type: 2}
-    dialogue: The strong retardant is my last hope. I hope I can get the reply from
-      Master Rowan today.
+    dialogue: The strong retardant potion is my last hope. Hopefully I can get a
+      reply from master Rowan today.
