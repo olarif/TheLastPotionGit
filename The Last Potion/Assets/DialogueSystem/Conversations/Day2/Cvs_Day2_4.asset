@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   allLines:
   - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
-    dialogue: Dear master Rowan,
+    dialogue: Dear Master Rowan,
   - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
     dialogue: It has been a while. Has master already  found the solution?
   - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
@@ -35,11 +35,10 @@ MonoBehaviour:
     dialogue: Surprisingly, her petrified legs had been repaired, but she also began
       mutating into a dryad.
   - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
-    dialogue: Now I'm trying to brew the great growth retardant, but the Furymint
-      and Abalathian Salt are hard to obtain.
+    dialogue: Now I'm trying to brew the great growth retardant, but the recipe is
+      missing.
   - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
-    dialogue: Can Master send a bit of them for me? For Hannah's life and research
-      both.
+    dialogue: Can Master send me the recipe? It will be grateful.
   - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
     dialogue: "Sincerely,\r\nBran Crowfield\r"
   - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}

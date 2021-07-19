@@ -16,8 +16,8 @@ MonoBehaviour:
   - speaker: {fileID: 11400000, guid: 9c06056877b44b04f8b1ffa5bde45c0e, type: 2}
     dialogue: Bran my son,
   - speaker: {fileID: 11400000, guid: 9c06056877b44b04f8b1ffa5bde45c0e, type: 2}
-    dialogue: "I\u2019m glad to hear that thy wife has great progress. The ingredients
-      thou need are attached."
+    dialogue: "I\u2019m glad to hear that thy wife has great progress. The ingredient
+      is Royal Mistletoe."
   - speaker: {fileID: 11400000, guid: 9c06056877b44b04f8b1ffa5bde45c0e, type: 2}
     dialogue: 'However, I still feel pessimistic about the current situation. '
   - speaker: {fileID: 11400000, guid: 9c06056877b44b04f8b1ffa5bde45c0e, type: 2}
@@ -35,7 +35,7 @@ MonoBehaviour:
     dialogue: The land thou stand on is thirsty for fresh, nurtured soil to summon
       something great.
   - speaker: {fileID: 11400000, guid: 9c06056877b44b04f8b1ffa5bde45c0e, type: 2}
-    dialogue: And thy wife has been chosen to be a medium for the summoning.
+    dialogue: And I assume thy wife has been chosen to be a medium for the summoning.
   - speaker: {fileID: 11400000, guid: 9c06056877b44b04f8b1ffa5bde45c0e, type: 2}
     dialogue: "Therefore, since we don\u2019t know what the land\u2019s intention
       is, thee shall retreat as soon as possible. "
@@ -48,4 +48,4 @@ MonoBehaviour:
     dialogue: I need to make this one last potion and hope for a miracle.
   - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
     dialogue: I've got all the presious ingredients. Now I need to find some Misletoe
-      in the town.
+      on the trees.
