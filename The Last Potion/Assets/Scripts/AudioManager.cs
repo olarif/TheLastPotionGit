@@ -11,7 +11,7 @@ public class AudioManager : MonoBehaviour
 
     // FMOD Instances
     private FMOD.Studio.EventInstance ISoundtrack;
-    private FMOD.Studio.EventInstance ICauldron;
+    //private FMOD.Studio.EventInstance ICauldron;
 
     // Scenes
     public String MenuScene;
@@ -54,9 +54,9 @@ public class AudioManager : MonoBehaviour
         ISoundtrack = FMODUnity.RuntimeManager.CreateInstance("event:/Music/Soundtrack");
         ISoundtrack.start();
 
-        // Cualdron
-        ICauldron = FMODUnity.RuntimeManager.CreateInstance("event:/SFX/Cauldron");
-        ICauldron.start();
+        // Cauldron
+        //ICauldron = FMODUnity.RuntimeManager.CreateInstance("event:/SFX/Cauldron");
+        //ICauldron.start();
     }
 
     void SwitchMusicOnScene()
