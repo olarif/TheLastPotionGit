@@ -29,12 +29,12 @@ MonoBehaviour:
   - speaker: {fileID: 11400000, guid: 9c06056877b44b04f8b1ffa5bde45c0e, type: 2}
     dialogue: At this point, her voice has been taken. She cannot talk anymore.
   - speaker: {fileID: 11400000, guid: 9c06056877b44b04f8b1ffa5bde45c0e, type: 2}
-    dialogue: I don't even know if she can hear me anymore.
+    dialogue: Bran doesn't even know if she can hear his voice anymore.
   - speaker: {fileID: 11400000, guid: 9c06056877b44b04f8b1ffa5bde45c0e, type: 2}
     dialogue: Not being petrified by the curse is good, but turning into a tree isnt't
       a lot better.
   - speaker: {fileID: 11400000, guid: 9c06056877b44b04f8b1ffa5bde45c0e, type: 2}
-    dialogue: Can she turn back? I honestly don't know.
+    dialogue: Can she turn back? He honestly doesn't know.
   - speaker: {fileID: 11400000, guid: 9c06056877b44b04f8b1ffa5bde45c0e, type: 2}
-    dialogue: The strong retardant potion is my last hope. Hopefully I can get a
-      reply from master Rowan today.
+    dialogue: The strong retardant potion is his last hope. Hopefully he can get
+      a reply from master Rowan today.

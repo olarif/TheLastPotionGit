@@ -14,35 +14,35 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   allLines:
   - speaker: {fileID: 11400000, guid: b34ce5d40d176fd4cabba44afc9f23fb, type: 2}
-    dialogue: All of us are leaving. Are you sure you two want to stay here?
+    dialogue: Bran, Are you sure you two want to stay here?
   - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
-    dialogue: She is still alive. I can't leave my wife like this. I'll keep searching
-      for the cure.
+    dialogue: I've told you so many times, Nick. Hannah is still alive. I can't leave
+      her like this. I'll keep searching for the cure.
   - speaker: {fileID: 11400000, guid: b34ce5d40d176fd4cabba44afc9f23fb, type: 2}
-    dialogue: It is a curse, not a disease. It even killed our priest. What can you
-      do to fight it?
+    dialogue: It is a curse, not a disease. It even killed our priest. You can't
+      heal her!
   - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
     dialogue: I've got some more recipes I haven't tried yet.
-  - speaker: {fileID: 11400000, guid: 9c06056877b44b04f8b1ffa5bde45c0e, type: 2}
-    dialogue: 'You have tried so many times, but Tom has died, Bill has died, Susan
-      has died...... '
   - speaker: {fileID: 11400000, guid: b34ce5d40d176fd4cabba44afc9f23fb, type: 2}
-    dialogue: All our friends are dead. All dead. The death of Hannah is only a matter
-      of time!
-  - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
-    dialogue: I know. However, as long as she is alive, I won't give up. I want you
-      to promise that you will return.
-  - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
-    dialogue: Once this curse is lifted... We've got so many memories together here.
+    dialogue: You have tried so many times, but Tom has died, Bill has died, Susan
+      has died...... All our friends are dead. All dead!
   - speaker: {fileID: 11400000, guid: b34ce5d40d176fd4cabba44afc9f23fb, type: 2}
-    dialogue: I can tell from your voice that you are exhausted. You can't hide it
-      under your mask!
+    dialogue: Stop trying! The death of Hannah is only a matter of time!
+  - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
+    dialogue: No, as long as she is alive, I won't give up.
+  - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
+    dialogue: Once this curse is lifted... We can live together, sing together, dance
+      together......
+  - speaker: {fileID: 11400000, guid: b34ce5d40d176fd4cabba44afc9f23fb, type: 2}
+    dialogue: Bran! You're getting crazy! You have exhausted all your means! You
+      can't hide it under your mask!
   - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
     dialogue: Listen. I can take good care of us. So I ask you to please leave and
       save yourself.
   - speaker: {fileID: 11400000, guid: b34ce5d40d176fd4cabba44afc9f23fb, type: 2}
-    dialogue: (Sigh) Alright, but you should leave too. Stay safe, please.
+    dialogue: (Sigh) Alright, but you should leave after her funeral. Stay safe,
+      please.
   - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
-    dialogue: Good luck. I hope we will meet again.
+    dialogue: She will not die. You just go!
   - speaker: {fileID: 11400000, guid: b34ce5d40d176fd4cabba44afc9f23fb, type: 2}
-    dialogue: Goodbye.
+    dialogue: (Sigh) Goodbye.

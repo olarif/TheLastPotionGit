@@ -23,10 +23,10 @@ MonoBehaviour:
     dialogue: You heard us?
   - speaker: {fileID: 11400000, guid: 0e0f50cb6d9e3844582613b7de3fab55, type: 2}
     dialogue: Of course.
-  - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
+  - speaker: {fileID: 11400000, guid: 0e0f50cb6d9e3844582613b7de3fab55, type: 2}
     dialogue: ...
   - speaker: {fileID: 11400000, guid: 0e0f50cb6d9e3844582613b7de3fab55, type: 2}
-    dialogue: He is the last one, right?
+    dialogue: Nick was the last one who left, right?
   - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
     dialogue: 'Yeah, he is the last one.
 
@@ -58,8 +58,8 @@ MonoBehaviour:
   - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
     dialogue: My dear, your blood can't circulate through your legs properly.
   - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
-    dialogue: I'll help you stretch your legs and take care of your nutrition. I'll
-      try to brew some potions for you.
+    dialogue: I'll take care of your nutrition and brew some potions for you. Please,
+      stay alive......
   - speaker: {fileID: 11400000, guid: 0e0f50cb6d9e3844582613b7de3fab55, type: 2}
     dialogue: Honey, that won't work...... Just kill me and free yourself.....
   - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
@@ -68,7 +68,7 @@ MonoBehaviour:
   - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
     dialogue: Hannah, Please trust me. I will heal you.
   - speaker: {fileID: 11400000, guid: 0e0f50cb6d9e3844582613b7de3fab55, type: 2}
-    dialogue: You will only infect yourself trying...
+    dialogue: You will only infect yourself...
   - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
     dialogue: I'll find the solution before that!
   - speaker: {fileID: 11400000, guid: 0e0f50cb6d9e3844582613b7de3fab55, type: 2}
