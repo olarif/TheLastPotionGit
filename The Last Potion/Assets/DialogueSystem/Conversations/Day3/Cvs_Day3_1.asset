@@ -31,7 +31,7 @@ MonoBehaviour:
   - speaker: {fileID: 11400000, guid: 9c06056877b44b04f8b1ffa5bde45c0e, type: 2}
     dialogue: Bran doesn't even know if she can hear his voice anymore.
   - speaker: {fileID: 11400000, guid: 9c06056877b44b04f8b1ffa5bde45c0e, type: 2}
-    dialogue: Not being petrified by the curse is good, but turning into a tree isnt't
+    dialogue: Not being petrified by the curse is good, but turning into a tree isn't
       a lot better.
   - speaker: {fileID: 11400000, guid: 9c06056877b44b04f8b1ffa5bde45c0e, type: 2}
     dialogue: Can she turn back? He honestly doesn't know.

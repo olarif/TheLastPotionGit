@@ -16,10 +16,14 @@ MonoBehaviour:
   - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
     dialogue: Aaaaaaahh! I can't take this anymore!
   - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
-    dialogue: "There is no way out.\r\nI have tried all the possibilities.\r"
+    dialogue: "There is no way out. I have tried all the possibilities.\r"
   - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
-    dialogue: "There is no hope.\r\nNothing is going to change.\r"
+    dialogue: "There is no hope.\nNothing is going to change.\r"
   - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
-    dialogue: There is no cure....
+    dialogue: There is no cure.
   - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
+<<<<<<< Updated upstream
     dialogue: 'I have to see her. '
+=======
+    dialogue: I need to go see her.
+>>>>>>> Stashed changes
