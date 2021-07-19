@@ -22,4 +22,4 @@ MonoBehaviour:
   - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
     dialogue: There is no cure....
   - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
-    dialogue: 'I need to go see her. '
+    dialogue: 'I have to see her. '

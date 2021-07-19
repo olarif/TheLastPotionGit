@@ -47,4 +47,5 @@ MonoBehaviour:
   - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
     dialogue: I need to make this one last potion and hope for a miracle.
   - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
-    dialogue: I will need to find some Misletoe in the town.
+    dialogue: I've got all the presious ingredients. Now I need to find some Misletoe
+      in the town.

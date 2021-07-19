@@ -29,15 +29,19 @@ MonoBehaviour:
     dialogue: As I said in the last letter, the petrified part can be easily fractured
       by simply touching it so I can't move her around.
   - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
-    dialogue: Nevertheless, I have a new discovery. I gave Hannah the growth potion.
+    dialogue: Nevertheless, I have a new discovery. I gave Hannah the growth potion
+      for plants.
   - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
     dialogue: Surprisingly, her petrified legs had been repaired, but she also began
       mutating into a dryad.
   - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
     dialogue: Now I'm trying to brew the great growth retardant, but the Furymint
-      and Abalathian Rock Salt are hard to obtain
+      and Abalathian Salt are hard to obtain.
+  - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
+    dialogue: Can Master send a bit of them for me? For Hannah's life and research
+      both.
   - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
     dialogue: "Sincerely,\r\nBran Crowfield\r"
   - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
-    dialogue: 'I have to bring this mail to the old stable outside. There is a traveller
-      that frequently comes by there. '
+    dialogue: 'Then I have to bring this mail to the old stable outside. There is
+      a traveller that frequently comes by there. '

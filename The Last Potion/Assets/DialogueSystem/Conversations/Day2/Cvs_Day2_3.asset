@@ -27,10 +27,15 @@ MonoBehaviour:
     dialogue: They stop the growth of branches and leaves to mature the flowers and
       fruits? This might work....
   - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
-    dialogue: The ingredients for the strong potion are hard to get. Cow flower is
-      easy to come by.
+    dialogue: The ingredients for the weak one are easy to come by. I've got some
+      Dhalmel Saliva and Red Quartz on the shelf.
   - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
-    dialogue: Furymint and Abalathian Rock Salt are both precious ingredients that
-      people can only be obtained in the Cloud Sea.
+    dialogue: And I know there are some wild Rue growing around the town.
+  - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
+    dialogue: 'But the ingredients for the strong potion are hard to get: Mistletoe,
+      Furymint and Abelathian Salt.'
+  - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
+    dialogue: Furymint and Abalathian Salt are both precious ingredients that people
+      can only be obtained in the Cloud Sea.
   - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
     dialogue: Maybe I should write a letter to Master Rowan and ask for some help.
