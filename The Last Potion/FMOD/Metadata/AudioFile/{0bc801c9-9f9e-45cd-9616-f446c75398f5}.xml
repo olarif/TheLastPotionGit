@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.01.00">
-	<object class="AudioFile" id="{db5f864a-871d-49ed-bb97-37a7e543966d}">
+	<object class="AudioFile" id="{0bc801c9-9f9e-45cd-9616-f446c75398f5}">
 		<property name="assetPath">
-			<value>Sounds/Crow_01.mp3</value>
+			<value>Sounds/Footsteps_Wood_001.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>44.0999985</value>
@@ -11,7 +11,7 @@
 			<value>2</value>
 		</property>
 		<property name="length">
-			<value>2.4816326530612245</value>
+			<value>0.44197278911564625</value>
 		</property>
 		<relationship name="masterAssetFolder">
 			<destination>{64bb8045-7958-419f-a688-b89f875e2835}</destination>
