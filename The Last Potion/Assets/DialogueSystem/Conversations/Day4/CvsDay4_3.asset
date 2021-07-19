@@ -10,21 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f94a03e51d4fdf540907be22a2ccb240, type: 3}
-  m_Name: Cvs_Day4_4
+  m_Name: CvsDay4_3
   m_EditorClassIdentifier: 
   allLines:
-  - speaker: {fileID: 11400000, guid: 9c06056877b44b04f8b1ffa5bde45c0e, type: 2}
-<<<<<<< Updated upstream
-    dialogue: "All of a sudden, the tree starts to bloom.\r The pink and white petals
-      filling the room.\r"
-=======
-    dialogue: 'All of a sudden, the tree starts to bloom. '
-  - speaker: {fileID: 11400000, guid: 9c06056877b44b04f8b1ffa5bde45c0e, type: 2}
-    dialogue: A warm breeze sweeps the room as the branches drift in the wind.
   - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
-    dialogue: Hannah, is that you?
+    dialogue: I'm sorry Hannah. This is all my fault!
   - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
-    dialogue: I understand. This is how it was meant to be. Thank you, Hannah.
+    dialogue: I wish I could turn you back, but i'm afraid its too late now... I'm
+      sorry...
   - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
-    dialogue: Farewell.
->>>>>>> Stashed changes
+    dialogue: I wish I could turn you back, but i'm afraid its too late now... I'm
+      sorry...

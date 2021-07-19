@@ -359,7 +359,7 @@ MonoBehaviour:
   m_Name: dialogueClip
   m_EditorClassIdentifier: 
   template:
-    convo: {fileID: 11400000, guid: d814979530c339e4690bd8e9191fe074, type: 2}
+    convo: {fileID: 11400000, guid: fa58a9eeed93a6643aa9c2867042402d, type: 2}
 --- !u!114 &-5635923715810369194
 MonoBehaviour:
   m_ObjectHideFlags: 1
