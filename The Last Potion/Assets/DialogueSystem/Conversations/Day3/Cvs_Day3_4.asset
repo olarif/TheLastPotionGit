@@ -40,7 +40,7 @@ MonoBehaviour:
     dialogue: "Therefore, since we don\u2019t know what the land\u2019s intention
       is, thee shall retreat as soon as possible. "
   - speaker: {fileID: 11400000, guid: 9c06056877b44b04f8b1ffa5bde45c0e, type: 2}
-    dialogue: "Keep healthy, and good luck. I would like to meet you again soon.\r\r\nBest
+    dialogue: "Keep healthy, and good luck. I would like to meet you again.\r\r\nBest
       Regards,\r\nRowan\r\n"
   - speaker: {fileID: 11400000, guid: 0a6e73cc12d7b9448b234314568fdf7a, type: 2}
     dialogue: 'This is the point of no return. '
