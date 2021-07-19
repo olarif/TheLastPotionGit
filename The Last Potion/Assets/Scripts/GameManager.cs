@@ -31,7 +31,7 @@ public class GameManager : MonoBehaviour
 
         if (DialogueManager.instance.isActive && Input.GetKeyDown(KeyCode.Space))
         {
-            DialogueManager.instance.ReadNext();
+            //DialogueManager.instance.ReadNext();
         }
 
 
@@ -57,16 +57,6 @@ public class GameManager : MonoBehaviour
         {
             playerController.StopWalking();
         }
-
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            Application.Quit();
-        }
-    }
-
-    public void Teleport(float x, float y, float z)
-    {
-        
     }
 
     public void DisableMovement()

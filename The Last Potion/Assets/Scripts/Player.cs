@@ -49,7 +49,7 @@ public class Player : MonoBehaviour
     {
         //Movement Axis / squash vertical axis by 2
         movement.x = Input.GetAxisRaw("Horizontal");
-        movement.y = Input.GetAxisRaw("Vertical");
+        movement.y = Input.GetAxisRaw("Vertical") / 1.75f;
 
         //Same speed diagonally
         movement.Normalize();

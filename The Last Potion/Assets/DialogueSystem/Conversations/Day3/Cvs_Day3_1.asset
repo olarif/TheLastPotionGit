@@ -31,7 +31,7 @@ MonoBehaviour:
   - speaker: {fileID: 11400000, guid: 9c06056877b44b04f8b1ffa5bde45c0e, type: 2}
     dialogue: I don't even know if she can hear me anymore.
   - speaker: {fileID: 11400000, guid: 9c06056877b44b04f8b1ffa5bde45c0e, type: 2}
-    dialogue: Not being petrified by the curse is good, but turning into a tree inst't
+    dialogue: Not being petrified by the curse is good, but turning into a tree isnt't
       a lot better.
   - speaker: {fileID: 11400000, guid: 9c06056877b44b04f8b1ffa5bde45c0e, type: 2}
     dialogue: Can she turn back? I honestly don't know.
